@@ -1,0 +1,48 @@
+/*POST*/
+.post-container {
+
+}
+
+.author-container {
+	width: 50%;
+	float: left;
+	margin: 0 5% 5% 0;
+}
+
+.author-info {
+	float: left;
+	margin-right: 5%;
+}
+
+.post-container p {
+	text-align: justify;
+}
+
+.image-left {
+	float: left;
+	margin: 0 20px 20px 0px;
+	width: 540px;
+	color: #fff;
+	font-family: 'Lato', sans-serif;
+	font-weight: 900;
+	font-size: 1.0em;		
+}
+
+.image-right {
+	float: right;
+	margin: 0 0 40px 0px;
+	width: 540px;
+	color: #fff;	
+	font-family: 'Lato', sans-serif;
+	font-weight: 900;
+	font-size: 1.0em;
+}
+
+.image-right p, .image-left p {
+	width: 500px;
+	margin: 0 20px 10px 20px;
+}
+
+.image-left img, .image-right img {
+	width: 540px;
+}

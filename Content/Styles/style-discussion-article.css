@@ -1,0 +1,118 @@
+/*POST*/
+.post-discuss {
+}
+
+.post-discuss p {
+	overflow-x: hidden;
+}
+
+.discuss-avatar-left {
+	float: left;
+	margin-right: 20px;
+	width: 60px;
+}
+
+.discuss-avatar-right {
+	float: right;
+	margin-left: 20px;
+	width: 60px;
+}
+
+.discuss, .discuss-alt {
+	overflow-x: hidden;
+}
+
+.discuss p {
+	background-color: #f9f9f9;
+	border-radius: 10px;
+	padding: 10px;
+}
+
+.discuss-alt p {
+	background-color: #ececec;
+	border-radius: 10px;
+	padding: 10px;
+}
+
+.discuss-image {
+	margin: 0 auto 20px auto;
+	width: 800px;
+	color: #fff;	
+	font-family: 'Lato', sans-serif;
+	font-weight: 900;
+	font-size: 1.0em;
+}
+
+.discuss-image img {
+	width: 800px;
+}
+
+.discuss-image p {
+	margin: 0 20px 10px 20px;
+	padding-bottom: 10px;
+}
+
+
+.discuss-avatar-left, .discuss-avatar-right {
+	max-width: 40px;
+}
+
+
+.discuss p {
+    position: relative;
+    margin: 0 0 30px 60px;
+    overflow-x: visible;
+    /*border: 1px solid #BEBEBE;*/
+}
+.discuss-alt p {
+    position: relative;
+    margin: 0 60px 30px 0;
+    overflow-x: visible;
+    /*border: 1px solid #BABABA;*/
+}
+
+.discuss p:after {
+  border-bottom: 8px solid transparent;
+  border-right: 8px solid #F9F9F9;
+  border-top: 8px solid transparent;
+  content: "";
+  display: inline-block;
+  left: -8px;
+  position: absolute;
+  top: 14px;
+}
+
+.discuss p:before {
+  border-bottom: 9px solid transparent;
+  /*border-right: 9px solid #BEBEBE;*/
+  border-top: 9px solid transparent;
+  content: "";
+  display: inline-block;
+  left: -9px;
+  position: absolute;
+  top: 13px;
+}
+
+
+.discuss-alt p:after {
+  border-bottom: 8px solid transparent;
+  border-left: 8px solid #ECECEC;
+  border-top: 8px solid transparent;
+  content: "";
+  display: inline-block;
+  right: -8px;
+  position: absolute;
+  top: 14px;
+}
+
+.discuss-alt p:before {
+  border-bottom: 9px solid transparent;
+  /*border-left: 9px solid #BABABA;*/
+  border-top: 9px solid transparent;
+  content: "";
+  display: inline-block;
+  right: -9px;
+  position: absolute;
+  top: 13px;
+}
+

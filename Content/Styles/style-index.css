@@ -1,0 +1,264 @@
+body {
+	background: url('../Images/index-bgd.png') right 50%;
+}
+
+
+.article-header-container {
+	height: 95%;
+	max-height: 680px;
+}
+
+/*CONTENT*/
+.article-promo-reel-container {
+	width: 100%;
+	border-bottom: 1px solid #dedede;
+	background-color: #dedede;
+	background: #cecece; /* Old browsers */
+	background: -moz-linear-gradient(top,  #cecece 0%, #eaeaea 30%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#cecece), color-stop(30%,#eaeaea)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #cecece 0%,#eaeaea 30%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #cecece 0%,#eaeaea 30%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #cecece 0%,#eaeaea 30%); /* IE10+ */
+	background: linear-gradient(to bottom,  #cecece 0%,#eaeaea 30%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cecece', endColorstr='#eaeaea',GradientType=0 ); /* IE6-9 */
+}
+
+.article-promo-reel {
+	margin: 0 auto;
+	padding: 0 0 3% 0;
+	height: 300px !important;
+	position: relative; 
+	overflow: auto; 
+	background: #fff;
+}
+
+.promo-reel-shape {
+	position: absolute;
+	z-index: 1000;
+	top: 0;
+}
+
+.article-promo-reel ul {
+	list-style-type: none;
+	padding: 0;
+	overflow-x: hidden;
+	background-color: #dedede;
+}
+
+.article-promo-reel li {
+	list-style-type: none;
+}
+
+.article-promo-reel ul li { 
+	float: left; 
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+.promo-reel-section {
+	float: left;
+	height: 260px;
+	width: 33.333333333%;
+	opacity: 0.9;
+}
+
+.promo-reel-section:hover {
+	opacity: 1;
+}
+
+.promo-reel-image {
+	width: 100%;
+	height: 260px;
+	overflow-y: hidden;
+	overflow-x: hidden;
+	float: left;
+	background-size: cover;
+	background-position: top center;
+	position: relative;
+	opacity: .8;
+}
+
+.promo-reel-image img {
+	width: 100%;
+	
+}
+
+.promo-reel-item {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	padding: 4%;
+	text-align: right;
+}
+
+.promo-reel-item:hover {
+	opacity: 1;
+}
+
+.promo-reel-item h1 {
+	color: #ffffff !important;
+	font-size: 1.2em;
+	margin-bottom: 2%;
+	letter-spacing: normal;
+}
+
+.promo-reel-item h1 a {
+	color: #ffffff;
+}
+
+.promo-reel-item h2 {
+	font-size: 1.1em;
+	margin: 0;
+	color: #fff;
+}
+
+.promo-reel-item h3 {
+	margin:  0 10% 0 8%;	
+}
+
+.promo-reel-item a {
+}
+
+.dots {
+	padding: 0;
+	height: 100%;
+	text-align: center;
+}
+
+.dots .dot {
+	display: inline-block;
+	width: 28px;
+	height: 28px;
+	font-size: 0;
+	margin: 2% 1% 2% 1%;
+	background: url("../Images/promo-reel-inactive.png") no-repeat center center;
+	background-size: cover;
+}
+
+.dots .active {
+	background: url("../Images/promo-reel-active.png") no-repeat center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/*END PROMO REEL*/
+
+
+.content-container {
+	overflow-x: hidden;
+	width: 100%;
+	background: none;
+}
+
+.news-container {
+	width: 92%;
+	max-width: 1400px;
+	margin: 0 auto;
+	overflow-x: hidden;
+}
+
+.news-container h1 {
+	font-size: 1.4em;
+	padding: .7em 0 .7em 1em;
+	color: #fff;
+}
+
+.news-label {
+	position: absolute;
+	float: left;
+	margin: 20px 0 0 0;
+}
+
+.label-text {
+	background-color: red;
+	color: #fff;
+	padding: 10%;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 900 !important;
+	line-height: 1.2em;
+	white-space: nowrap;
+	display: block;
+	width: 100%;
+	height: 16px;
+}
+
+.news-label img {
+	width: 25px;
+}
+
+.ext-news-container {
+	float: right;
+	overflow-x: hidden;
+	width: 20%;
+	margin: 20px auto;
+	padding-left: 3%;
+}
+
+.ext-news-container h3 {
+	text-align: right;
+}
+
+.ext-news-article {
+	margin-bottom: 20px;
+	border-bottom: 1px solid #dedede;
+	overflow-x: hidden;
+}
+
+.ext-news-article-image {
+	width: 100%;
+}
+
+.ext-news-article h2 {
+	font-size: 1.2em;
+}
+
+.ext-news-article h2 a {
+}
+
+.int-news-container {
+	float: left;
+	overflow-x: hidden;
+	width: 70%;
+	margin: 0 auto;
+	padding: 20px 0 0 0;
+	background-color: #fff;
+}
+
+.int-news-article {
+	margin: 30px 30px 30px 0;
+	overflow-x: hidden;
+	width: 75%;
+	float: right;
+}
+
+.int-news-article-image {
+	width: 250px;
+	margin: 0 5% 5% 0;
+	margin-left: 25px;
+	float: left;
+}
+
+.int-news-article h2 {
+	margin: 0 0 8px 0;	
+	font-size: 1.8em;
+}
+
+.int-news-article h2 a {
+	font-weight: bold;
+}
+
+.about-container {
+	margin: 40px 0 0 30px;
+	padding: 0 0 0 0;
+	width: 20%;
+	float: left;
+	font-size: .8em;
+}
+
+.about-container .site-tools {
+	float: none;
+	height: 60px;
+	margin: 0 auto;
+	display: block;
+	text-align: center;
+}
