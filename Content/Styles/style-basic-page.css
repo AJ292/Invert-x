@@ -1,5 +1,6 @@
-.article-header-master-container, .article-header-container, .article-header {
-	height: 300px !important;
+.article-header-container, .article-header {
+	height: 400px !important;
+	background-position: center;
 }
 
 .topic-info {

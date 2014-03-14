@@ -26,6 +26,10 @@
 	border-top: 40px solid #FFFFFF;
 }
 
+.recent-archive-container {
+	clear: both;
+}
+
 .archive-table {
 	border-collapse: collapse;
 	width: 990px;
@@ -36,6 +40,28 @@
 .archive-table td {
 	width: 320px;
 	padding: 0 0 28px 0;
+}
+
+.archive-table-poster {
+	float: left;
+	background-position: center center;
+	background-size: cover;
+	width: 160px;
+	height: 200px;
+	text-align: center;
+	display: table;
+	margin-right: 20px;
+}
+
+.archive-table-poster a {
+	display: table-cell;
+	vertical-align: middle;
+	width: 160px;
+	height: 200px;
+	background-color: rgba(0,0,0,.4);
+	color: #fff !important;
+	font-size: 1.6em;
+	font-family: 'Montserrat', sans-serif;
 }
 
 .archive-list {

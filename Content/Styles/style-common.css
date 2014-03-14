@@ -1,9 +1,4 @@
 /*GLOBALS*/
-@font-face {
-	font-family: 'Intro';
-	src: url('../fonts/IntroInline.otf');
-}
-
 * {
 	margin: 0;
 	padding: 0;
@@ -19,7 +14,6 @@ html {
 	font-size: .9em;
 	font-family: "HelveticaNeue", Arial, sans-serif;
 	color: #333333;
-	overflow-x: hidden;
 }
 
 body {
@@ -207,6 +201,7 @@ i, em {
 	background-size: cover;
 	position: relative;
 	display: table;
+	overflow-x: hidden;
 }
 
 .topic-info {
@@ -252,8 +247,9 @@ i, em {
 	width: 100%;
 	top: 50%;
 	position: absolute;
-	display: table-cell;
+	left: 0;
 	z-index: 1000;
+	white-space: nowrap;
 }
 
 .prev-article {
