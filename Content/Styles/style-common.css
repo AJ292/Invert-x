@@ -92,13 +92,10 @@ i, em {
 	height: 80px;
 	position: absolute;
 	top: 0;
-	z-index: 1000;
+	z-index: 100;
 }
 
 .main-menu {
-	min-width: 990px;
-	width: 90%;
-	max-width: 1100px;
 	margin: 0 auto;
 	height: 80px;
 	line-height: 60px;
@@ -115,9 +112,8 @@ i, em {
 }
 
 .main-menu-nav li ul {
-	display: none;
-	height: 40px;
-	width: 360px;
+	height: 0px;
+	display: inline-block;
 	margin: 0 auto;
 	text-align: center;
 	background-color: #dedede;
@@ -125,6 +121,8 @@ i, em {
 	white-space: nowrap;
 	padding: 0;
 	line-height: 40px;
+	opacity: 0;
+	transition: height .3s ease, opacity .5s ease;
 }
 
 .main-menu-nav li ul li {
@@ -141,30 +139,36 @@ i, em {
 
 .main-menu-logo {
 	line-height: 60px;
-	width: 360px;
 	margin: 0 auto;
 }
 
 .main-menu-logo a {
 	display: block;
-	width: 60px;
+	width: 360px;
 	height: 80px;
 	margin: 0 auto;
 }
 
-.main-menu-logo img {
+.menu-nav-x {
 	height: 60px;
 	margin: 10px 0 0 0;
 }
 
-.main-menu-logo:hover img {
-	transform: rotate(45deg);
-	-ms-transform:rotate(45deg); /* IE 9 */
-	-webkit-transform:rotate(45deg); /* Opera, Chrome, and Safari */
+.menu-nav-invert {
+	width: 0;
+	height: 60px;
+	transition: width 0.2s ease, opacity 0.4s ease;
+	opacity: 0;
+}
+
+.main-menu-logo:hover .menu-nav-invert {
+	opacity: 1;
+	width: 191px;
 }
 
 .main-menu-logo:hover > ul {
-	display: block !important;
+	height: 40px;
+	opacity: 1;
 }
 
 .site-tools {
@@ -250,6 +254,7 @@ i, em {
 	left: 0;
 	z-index: 1000;
 	white-space: nowrap;
+	overflow-x: hidden;
 }
 
 .prev-article {
@@ -376,15 +381,20 @@ i, em {
 #footer {
 	text-align: center;
 	margin: 0 auto 0 auto;
-	padding: 3% 0 3% 0;
+	padding: 2% 0 2% 0;
 	color: #fff;
     width: 100%;
-    background-color: #333;
+    background-color: #262626;
 }
 
 #footer p {
 	margin-bottom: 15px;
-	font-size: .8em;
+	font-size: 1em;
+	font-family: 'Montserrat', sans-serif;
+}
+
+#footer p a {
+	color: #fff;
 }
 
 #footer img {
