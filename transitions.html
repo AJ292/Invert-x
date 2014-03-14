@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>transitions</title>
+		<link rel="stylesheet" href="Content/Styles/normalize.css">
+		<link rel="stylesheet" href="Content/Styles/style-common.css">
+		<link rel="stylesheet" href="Content/Styles/style-discussion-article.css">
+		<link rel="stylesheet" href="Content/Styles/style-section-colours.css">
+		<script type="text/javascript" src="Content/Scripts/jquery-1.8.2.min.js"></script>
+        <style>
+            /* setup stuff, ignore */
+            body { margin: 40px; }
+            #thing { font-size: 50px; height: 200px; line-height: 40px; padding: 20px; position: relative; width: 400px; border: 1px solid #aaa; overflow: hidden; }
+            
+            /* non-hover styles */
+            #aj {
+                width: 400px;
+                position: absolute;
+                text-align: center;
+                transition: width 0.4s ease;
+            }
+            #smells {
+                width: 400px;
+                position: absolute;
+                top: -40px;
+                left: 100px;
+                opacity: 0;
+                transition: top 0.4s ease, opacity 0.4s ease;
+            }
+            #bad { width: 400px; position: relative; top: 80px; text-align: center; }
+            #b, #a, #d {
+                display: inline-block;
+                transition: opacity 0.4s ease;
+                opacity: 0;
+            }
+            #b { transition-delay: 0.2s; }
+            #a { transition-delay: 0.4s; }
+            #d { transition-delay: 0.6s; }
+            
+            /* hover styles */
+            #thing:hover #aj {
+                width: 20px;
+            }
+            #thing:hover #smells {
+                top: 20px;
+                opacity: 1;
+            }
+            #thing:hover #b, #thing:hover #a, #thing:hover #d {
+                opacity: 1;
+            }
+            
+            /* an annoying thing */
+            #annoying-thing {
+                animation: rotate 0.6s infinite;
+                transition-timing-function: linear;
+                -webkit-animation: rotate 0.6s infinite;
+                -webkit-transition-timing-function: linear;
+                width: 440px;
+                height: 50px;
+                line-height: 50px;
+                text-align: center;
+                transform-origin: 200px 10px 0;
+            }
+            
+            @keyframes rotate {
+                0% { transform: rotate(-2deg); }
+                50% { transform: rotate(2deg); }
+                100% { transform: rotate(-2deg); }
+            }
+            @-webkit-keyframes rotate {
+                0% { -webkit-transform: rotate(-2deg); }
+                50% { -webkit-transform: rotate(2deg); }
+                100% { -webkit-transform: rotate(-2deg); }
+            }
+        </style>
+    </head>
+	<body>
+        <div id="thing">
+            <div id="aj">AJ</div>
+            <div id="smells">SMELLS</div>
+            <div id="bad">
+                <div id="b">B</div>
+                <div id="a">A</div>
+                <div id="d">D</div>
+            </div>
+        </div>
+        <div id="annoying-thing">
+            HOVER OVER THE RECTANGLE
+        </div>
+	</body>
+</html>	
