@@ -13,6 +13,21 @@
 		<link rel="stylesheet" href="Content/Styles/style-dual-article.css">
 		<link rel="stylesheet" href="Content/Styles/style-section-colours.css">
 		<script type="text/javascript" src="Content/Scripts/jquery-1.8.2.min.js"></script>
+		<script type="text/javascript" src="Content/Scripts/jquery.scrollTo-1.4.3.1.min.js"></script>
+		<script type="text/javascript" src="Content/Scripts/jquery.easing.1.3.js"></script>
+		<script type="text/javascript" src="Content/Scripts/jquery.scrollorama.js"></script>
+		<script type="text/javascript" src="Content/Scripts/jquery.scrolldeck.js"></script>
+		<script>
+			$(document).ready(function() {
+  				var deck = new $.scrolldeck({
+   					buttons: '.content-jump-button',
+    				slides: '.content-container', 
+    				duration: 700,
+    				easing: 'easeInOutExpo',
+					offset: 0
+  				});
+			});
+		</script>
     </head>
 	<body class="game-article">
 		<div class="main-menu-container">
@@ -37,12 +52,11 @@
 				<h2>Questioning what makes a game, a game.</h2>
 				<h3>Published 14 March, 2014</h3>
 				<div class="content-jump">
-					<a href="#ContentStart"><img src="Content/Images/nav-arrow.png"></a>
+					<a href="#ContentStart" class="content-jump-button"><img src="Content/Images/nav-arrow.png"></a>
 				</div>
 			</div>
 		</div>
-		<a name="ContentStart"></a>
-		<div class="content-container">
+		<div class="content-container" id="ContentStart">
     		<div class="post-container">
            		<div class="post-one">
             		<div class="author-container">

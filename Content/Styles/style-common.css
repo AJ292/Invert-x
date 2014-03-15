@@ -120,7 +120,7 @@ i, em {
 	display: inline-block;
 	margin: 0 auto;
 	text-align: center;
-	background-color: #dedede;
+	background-color: #f7f7f7;
 	list-style-type: none;
 	white-space: nowrap;
 	padding: 0;
@@ -287,15 +287,17 @@ i, em {
 .content-container {
    	background-color: #fff;
 	width: 90%;
-	margin: 0 auto;
+	margin: 0px auto;
+	padding: 60px 0 0 0;
 	clear: both;
+	position: static !important;
 }
 
 /*POST*/
 .post-container {
 	width: 90%;
 	max-width: 1400px;
-	margin: 60px auto;
+	margin: 0 auto;
 	overflow-x: hidden;
 }
 
