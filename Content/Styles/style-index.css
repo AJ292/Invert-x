@@ -1,6 +1,5 @@
 .article-header-container {
-	height: 95%;
-	max-height: 680px;
+	max-height: 640px;
 	background-position: left center !important;
 }
 
@@ -54,8 +53,9 @@
 .promo-reel-section {
 	float: left;
 	height: 200px;
-	width: 33.333333333%;
-	opacity: 0.9;
+	width: 100%;
+	opacity: 0.7;
+	transition: width 0.2s ease, opacity 0.4s ease;
 }
 
 .promo-reel-section:hover {
@@ -71,7 +71,7 @@
 	background-size: cover;
 	background-position: top center;
 	position: relative;
-	opacity: .8;
+	opacity: .9;
 }
 
 .promo-reel-image img {
@@ -84,7 +84,6 @@
 	bottom: 0;
 	left: 0;
 	padding: 4%;
-	text-align: right;
 }
 
 .promo-reel-item:hover {
@@ -115,27 +114,6 @@
 .promo-reel-item a {
 }
 
-.dots {
-	padding: 0;
-	height: 100%;
-	text-align: center;
-}
-
-.dots .dot {
-	display: inline-block;
-	width: 28px;
-	height: 28px;
-	font-size: 0;
-	margin: 2% 1% 2% 1%;
-	background: url("../Images/promo-reel-inactive.png") no-repeat center center;
-	background-size: cover;
-}
-
-.dots .active {
-	background: url("../Images/promo-reel-active.png") no-repeat center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
 /*END PROMO REEL*/
 
 
@@ -229,6 +207,7 @@
 	margin: 30px 30px 30px 0;
 	overflow-x: hidden;
 	width: 100%;
+	font-size: .9em;
 }
 
 .int-news-article-image {
@@ -239,19 +218,19 @@
 
 .int-news-article h2 {
 	margin: 0 0 8px 0;	
-	font-size: 1.8em;
 }
 
 .int-news-article h2 a {
-	font-weight: bold;
+
 }
 
 .about-container {
-	padding: 0 40px 0 40px;
+	padding: 0 40px 40px 40px;
 	width: 30%;
 	display: table-cell;
-	font-size: .8em;
-	background: url('../Images/index-bgd.png');
+	font-size: .85em;
+	/*background: url('../Images/index-bgd.png');*/
+	background: #f7f7f7;
 }
 
 .about-container .site-tools {

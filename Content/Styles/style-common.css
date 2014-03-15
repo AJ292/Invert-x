@@ -53,6 +53,10 @@ h3 {
 	font-family: 'Roboto Slab', serif;
 }
 
+h4 {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: normal;
+}
 
 a:hover {
 	text-decoration: underline;
@@ -62,8 +66,8 @@ p {
 	margin: 0 0 30px 0;
 	vertical-align: top;
 	font-family: 'Roboto Slab', serif;
-	line-height: 1.9em;
-	font-size: 1.05em;
+	line-height: 2em;
+	font-size: 1.2em;
 }
 
 b, strong {
@@ -198,7 +202,7 @@ i, em {
 /*POST HEADER*/
 .article-header-container {
 	height: 100%;
-	max-height: 900px;
+	max-height: 800px;
 	width: 100%;
 	background-position: left top;
 	background-repeat: no-repeat;
@@ -297,7 +301,7 @@ i, em {
 
 .closing-paragraph {
 	text-align: center;
-	font-size: 1.2em;
+	font-size: 1.4em;
 }
 
 .post-one, .post-two {
@@ -324,21 +328,20 @@ i, em {
 	margin: 0 auto 30px auto;
 	padding-bottom: 10px;
 	width: 100%;
-	max-width: 900px;
 	color: #fff;
 	font-weight: 900;
-	font-size: 1.0em;		
+	font-size: 1.0em;
 }
 
 .image p {
 	width: auto;
 	margin: 0 20px 0 20px;
 	font-family: 'Montserrat', sans-serif;
+	text-align: center !important;		
 }
 
 .image img {
 	width: 100%;
-	max-width: 900px;
 }
 
 /*PULL QUOTE*/
@@ -349,9 +352,10 @@ i, em {
 	float: left;
 	color: #fff;
 	font-family: 'Montserrat', sans-serif;
-	font-size: 1.4em;
-	line-height: 1.8em;
+	font-size: 1.6em;
+	line-height: 2em;
 	text-align: left !important;
+	text-transform: uppercase;
 }
 
 /*COMMENTS*/
@@ -399,4 +403,5 @@ i, em {
 
 #footer img {
 	padding: 0 20px 0 20px;
+	width: 100px;
 }

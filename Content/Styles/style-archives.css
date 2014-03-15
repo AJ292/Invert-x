@@ -1,9 +1,5 @@
-.current-archive-info {
-	min-width: 990px;
-	width: 100%;
-	max-width: 1100px;
-	margin: 0 auto;
-	overflow-x: hidden;
+.article-header-container {
+	max-height: 640px;
 }
 
 .section-info {
@@ -20,14 +16,14 @@
 }
 
 .archive-container {
-	width: 990px;
-	margin: 0 auto;
-	border-bottom: 40px solid #FFFFFF;
-	border-top: 40px solid #FFFFFF;
+	width: 90%;
+	margin: 60px auto;
 }
 
 .recent-archive-container {
 	clear: both;
+	overflow-x: hidden;
+	margin: 20px auto 20px auto;
 }
 
 .archive-table {

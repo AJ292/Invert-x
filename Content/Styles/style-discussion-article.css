@@ -1,5 +1,7 @@
 /*POST*/
 .post-discuss {
+	width: 70%;
+	margin: 0 auto;
 }
 
 .post-discuss p {
@@ -34,29 +36,9 @@
 	padding: 10px;
 }
 
-.discuss-image {
-	margin: 0 auto 20px auto;
-	width: 800px;
-	color: #fff;	
-	font-family: 'Lato', sans-serif;
-	font-weight: 900;
-	font-size: 1.0em;
-}
-
-.discuss-image img {
-	width: 800px;
-}
-
-.discuss-image p {
-	margin: 0 20px 10px 20px;
-	padding-bottom: 10px;
-}
-
-
 .discuss-avatar-left, .discuss-avatar-right {
 	max-width: 40px;
 }
-
 
 .discuss p {
     position: relative;
