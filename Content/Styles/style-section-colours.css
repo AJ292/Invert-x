@@ -1,29 +1,17 @@
 /*INVERT-X GAMES*/
 .game-article a, .game-article .pull-quote {
-	color: #bc1726;
 	color: #e13c36;
 }
 
 .games, #games, .game-article .index-article-header-master-container, .article-header-master-container, .game-article h2.shine-assign-header, .game-article h2.comments-header, .game-article .image, .game-article .discuss-image, .game-article .archive-current, .game-article .section-info, .item-game {
-	background-color: #bc1726;
 	background-color: #e13c36;
 }
 
 /*INVERT-X FILMS*/
 .film-article a, .film-article .pull-quote {
-	color: #174e74;
-	color: #62bcc5;
 	color: #15948b;
 }
 
 .films, #films, .film-article .article-header-master-container, .film-article h2.shine-assign-header, .film-article h2.comments-header, .film-article .image, .film-article .image-left, .film-article .image-right, .film article .discuss-image, .film-article .archive-current, .film-article .section-info, .item-film {
-	background-color: #174e74;
-	background-color: #62bcc5;
 	background-color: #15948b;
 }
-
-/*OTHER COLOURS*/
-	/*color: #8CC63F;
-	color: #388b00;
-	background-color: #8CC63F;
-	background-color: #388b00;*/

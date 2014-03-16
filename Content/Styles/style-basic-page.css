@@ -8,10 +8,8 @@
 }
 
 .basic-page-container {
-	width: 990px;
+	width: 70%;
 	margin: 0 auto;
-	border-bottom: 40px solid #FFFFFF;
-	border-top: 40px solid #FFFFFF;
 	overflow-x: hidden;
 }
 

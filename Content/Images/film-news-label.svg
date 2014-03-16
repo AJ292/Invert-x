@@ -4,11 +4,11 @@
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 width="101.822px" height="101.824px" viewBox="0 0 101.822 101.824" enable-background="new 0 0 101.822 101.824"
 	 xml:space="preserve">
-<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="87.051" y1="14.186" x2="15.0501" y2="86.187" gradientTransform="matrix(0.7071 0.7071 0.7071 -0.7071 -20.6736 50.3008)">
-	<stop  offset="0" style="stop-color:#102A44"/>
-	<stop  offset="0.188" style="stop-color:#13314F"/>
-	<stop  offset="0.6907" style="stop-color:#1A4267"/>
-	<stop  offset="1" style="stop-color:#1D4870"/>
+<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="-388.8066" y1="599.6494" x2="-460.8076" y2="671.6503" gradientTransform="matrix(0.7071 0.7071 0.7071 -0.7071 -98.1746 800.7615)">
+	<stop  offset="0" style="stop-color:#002843"/>
+	<stop  offset="0.2533" style="stop-color:#044B5B"/>
+	<stop  offset="1" style="stop-color:#087375"/>
+	<stop  offset="1" style="stop-color:#0C948B"/>
 </linearGradient>
 <polygon fill="url(#SVGID_1_)" points="101.823,0 101.823,101.824 0,0 "/>
 </svg>
