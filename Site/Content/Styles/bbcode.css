@@ -1,0 +1,122 @@
+/* BBCODE */
+
+.bbc-b {
+    font-weight: bold;
+}
+
+.bbc-i {
+    font-style: italic;
+}
+
+.bbc-u {
+    text-decoration: underline;
+}
+
+.bbc-s {
+    text-decoration: line-through;
+}
+
+.bbc-auto {
+
+}
+
+.bbc-img-con {
+    margin: 0 auto 28px auto;
+    padding: 7px;
+    border: 1px solid #dedede;
+    text-align: center;
+    width: 560px;
+    -webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.bbc-img-cap {
+    color: #393939;
+    font-style: italic;
+    font-size: 80%;
+}
+
+.bbc-img {
+    display: block;
+    max-width: 100%;
+}
+
+.bbc-simg {
+
+}
+
+.bbc-url {
+
+}
+
+.bbc-quote {
+    font-style: italic;
+    padding: 0 5px;
+	text-align: center;
+}
+
+.bbc-pullquote {
+    font-size: 18px;
+    font-weight: 900;
+    margin: 0 28px 28px !important;
+    width: 240px;
+}
+
+.post-left .bbc-pullquote {
+    float: left;
+}
+
+.post-right .bbc-pullquote {
+    float: right;
+}
+
+.bbc-pullquote.left {
+    float: left !important;
+}
+
+.bbc-pullquote.right {
+    float: right !important;
+}
+
+.bbc-youtube-embed {
+    margin: 0 24px 28px;
+    font-family: 'Quattrocento Sans',sans-serif;
+    font-size: 14px;
+    line-height: 28px;
+    text-align: center;
+}
+
+.bbc-youtube-embed object {
+    width: 590px !important;
+    height: 330px !important;
+}
+
+.bbc-youtube-embed-caption {
+    font-style: italic;
+    display: block;
+}
+
+.bbc-size {
+
+}
+
+.bbc-colour {
+
+}
+
+.bbc-ul {
+
+}
+
+.bbc-ol {
+
+}
+
+.bbc-li {
+
+}
+
+.bbc-h {
+
+}

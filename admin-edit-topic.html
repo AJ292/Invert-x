@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<meta name="viewport" content="width=device-width, minimumscale=1.0, maximum-scale=1.0" />
+		<title>Invert-x &ndash; The non-competitive, duel to the death.</title>
+		<link href='http://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="Content/Styles/normalize.css">
+		<link rel="stylesheet" href="Content/Styles/style-common.css">
+		<link rel="stylesheet" href="Content/Styles/style-basic-page.css">
+		<link rel="stylesheet" href="Content/Styles/style-nice-forms.css">
+		<link rel="stylesheet" href="Content/Styles/style-section-colours.css">
+		<script type="text/javascript" src="Content/Scripts/jquery-1.8.2.min.js"></script>
+    </head>
+	<body class="game-article">
+		<div class="main-menu-container">
+			<div class="main-menu">
+				<ul class="main-menu-nav">
+					<li class="main-menu-logo"><a href="index.html"><img src="Content/Images/menu-bar-invert.png" alt="Invert" class="menu-nav-invert"><img src="Content/Images/menu-bar-x.png" alt="X" class="menu-nav-x"></a>
+						<ul>
+							<li><a href="games.html">GAMES</a></li>
+							<li><a href="films.html">FILMS</a></li>
+							<li><a href="about.html">ABOUT</a></li>
+							<li><a href="contact.html">CONTACT</a></li>
+						</ul>					
+					</li>
+				</ul>	
+			</div>
+		</div>
+		<div class="article-header-container" style="background-image: url('Content/Banners/banner-admin-5.jpg');">
+			<div class="topic-info">
+				<h1>THE ADMIN PANEL</h1>
+				<h2>Here be dragons!</h2>
+			</div>
+		</div>
+    	<div class="content-container">
+            <div class="basic-page-container">
+                <a rel="ajax" href="/ix/Admin/Index">&lt; Back to Admin Panel</a><br>
+                <a rel="ajax" href="/ix/Admin/EditArticle/55">&lt; Back to Article Edit Page</a>
+                <h2>Edit Topic: Modding</h2>
+                <form action="/ix/Admin/EditTopic/55" method="post" enctype="multipart/form-data">
+                    <div class="nice-forms nice-centered">
+                        <p>
+                            <label for="form_Title">Title</label>
+                            <input type="text" name="Title" id="form_Title" value="Modding" />
+                            
+                        </p>
+                        <p>
+                            <label for="form_TagLine">TagLine</label>
+                            <input type="text" name="TagLine" id="form_TagLine" value="" />
+                            
+                        </p>
+                        <p>
+                            <label for="form_CategoryID">Category</label>
+                            <select name="CategoryID" id="form_CategoryID">
+                                <option value="1" selected="selected">Games</option>
+                                <option value="2">Films</option>
+                            </select>
+                        </p>
+                        <p>
+                            <label for="form_Url">Url</label>
+                            <input type="text" name="Url" id="form_Url" value="Modding" />
+                            
+                        </p>
+                        <p>
+                            <label for="form_Date">Date</label>
+                            <input type="text" name="Date" id="form_Date" value="2013-07-30" class="datepicker" />
+                            
+                        </p>
+                        <p>
+                            <label for="form_BannerImage">Banner Image</label>
+                            <input type="file" name="BannerImage" id="form_BannerImage" />
+                            
+                        </p>
+                        <p>
+                            <label for="form_ArchivesImage">Archives Image</label>
+                            <input type="file" name="ArchivesImage" id="form_ArchivesImage" />
+                            
+                        </p>
+                        <p>
+                            <input name="UseDarkTheme" value="0" type="hidden" />
+                            <input type="checkbox" name="UseDarkTheme" id="form_UseDarkTheme" value="1" />
+                            <label for="form_UseDarkTheme">Use Dark Colour Theme</label>
+                        </p>
+                        <p>
+                            <label for="form_NewsText">Optional News Post</label>
+                            <textarea rows="10" cols="60" name="NewsText" id="form_NewsText" class=""></textarea>
+                        </p>
+                        <p>
+                            <label for="form_ClosingText">Optional Closing Text</label>
+                            <textarea rows="10" cols="60" name="ClosingText" id="form_ClosingText" class=""></textarea>
+                        </p>
+                        <p>
+                            <label for="form_TopicTags">Tags</label><br>
+                            <input type="hidden" name="AllTags" value="cake,cheese,test" />
+                            <input type="hidden" name="TopicTags" class="tags" />
+                        </p>
+                        <p>
+                            <input type="submit" value="Edit Topic" />
+                        </p>
+                    </div>
+                </form>
+            </div>
+        </div>
+		<div id="footer">
+			<p>Invert-x is copyright <a href="http://scrub-studios.com/">Scrub</a> and <a href="http://logic-and-trick.com/">Logic & Trick</a>, 2014. All written content is owned by their respective authors, unless otherwise stated.<br> All opinions expressed on the site are that of their authors.</p>
+			<p><a href="http://scrub-studios.com"><img src="Content/Images/scrub-logo.png" alt="Scrub"></a> <a href="http://logic-and-trick.com/"><img src="Content/Images/lnt-logo.png" alt="Logic & Trick"></a></p>
+			<p><a href="#">Admin login</a></p>
+		</div>
+	</body>
+</html>	

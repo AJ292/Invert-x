@@ -1,0 +1,61 @@
+.article-header-container, .article-header {
+	height: 400px !important;
+	background-position: center;
+}
+
+.topic-info {
+	padding-top: 140px !important;
+}
+
+.basic-page-container {
+	width: 70%;
+	margin: 0 auto;
+	overflow-x: hidden;
+}
+
+/*ADMIN SECTION*/
+.admin-tools-column {
+	width: 495px;
+	float: left;
+	margin-bottom: 20px;
+}
+
+.admin-nav {
+	list-style-type: none;
+	padding: 0;
+	margin: 20px 0 0 0;
+}
+
+.admin-nav li {
+	display: block;
+	width: 400px;
+	padding: 10px;
+	min-height: 40px;
+	line-height: 40px;
+	margin: 0 0 10px 0;
+	border: 1px solid #dedede;
+}
+
+.admin-nav li img {
+	height: 40px;
+	float: left;
+	margin: 0 10px 0 0;
+}
+
+.archive-table {
+	border-collapse: collapse;
+	width: 990px;
+	text-align: center;
+	margin-top: 20px;
+}
+
+.archive-table td {
+	width: 320px;
+	padding: 0 0 28px 0;
+}
+
+.archive-list {
+	width: 280px;
+	display: inline-block;
+	vertical-align: top;
+}
