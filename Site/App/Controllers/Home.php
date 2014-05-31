@@ -5,11 +5,11 @@ class HomeController extends Controller
     function Index()
     {
         $this->viewData['topics'] = CustomQuery::Query(
-            'SELECT T.ID, T.Url, T.Title, T.TagLine, T.Date, T.ArchivesImage, C.Class
+            'SELECT T.ID, T.Url, T.Title, T.TagLine, T.Date, T.ArchivesImage, T.BannerImage, C.Class
             FROM Topics T
             LEFT JOIN Categories C ON T.CategoryID = C.ID
             WHERE T.Published > 0
-            ORDER BY T.Date DESC
+            ORDER BY T.Date DESC, ID DESC
             LIMIT 10');
         $this->viewData['news'] = CustomQuery::Query(
             'SELECT N.ID, N.Heading, N.HtmlSummary, N.Image, N.Created, U.ID, U.Name AS UserName, C.Class, S.Name AS SectionName
@@ -17,17 +17,18 @@ class HomeController extends Controller
             LEFT JOIN Users U ON N.UserID = U.ID
             LEFT JOIN Categories C ON N.CategoryID = C.ID
             LEFT JOIN NewsSections S ON N.SectionID = S.ID
+            ORDER BY Created DESC
             LIMIT 10'
         );
-        $this->viewData['body_class'] = 'game-article';
+        $this->viewData['body_class'] = 'home';
         return $this->View();
     }
 
     function Article($url)
     {
         $topic = CustomQuery::Query(
-            'SELECT T.ID, T.Title, T.TagLine, C.Name AS CategoryName, T.Url,
-            T.Type, T.Date, T.BannerImage, T.HtmlNewsText, T.UseDarkTheme
+            'SELECT T.ID, T.Title, T.TagLine, C.Class AS Class, T.Url,
+            T.Type, T.Date, T.BannerImage, T.HtmlNewsText, T.HtmlClosingText, T.UseDarkTheme
             FROM Topics T
             LEFT JOIN Categories C ON T.CategoryID = C.ID
             WHERE T.Url = :url',
@@ -35,10 +36,10 @@ class HomeController extends Controller
         if (count($topic) == 0) return $this->RedirectToAction('Index');
         $topic = $topic[0];
 
-        $pq = CustomQuery::Query('SELECT Url, Title FROM Topics WHERE Published > 0 AND Date < :date ORDER BY Date DESC LIMIT 1', array('date' => $topic->Date));
+        $pq = CustomQuery::Query('SELECT Url, Title FROM Topics WHERE Published > 0 AND (Date, ID) < (:date, :id) ORDER BY Date DESC, ID DESC LIMIT 1', array('date' => $topic->Date, 'id' => $topic->ID));
         $this->viewData['prev'] = count($pq) > 0 ? $pq[0] : null;
 
-        $nq = CustomQuery::Query('SELECT Url, Title FROM Topics WHERE Published > 0 AND Date > :date ORDER BY Date ASC  LIMIT 1', array('date' => $topic->Date));
+        $nq = CustomQuery::Query('SELECT Url, Title FROM Topics WHERE Published > 0 AND (Date, ID) > (:date, :id) ORDER BY Date ASC, ID ASC LIMIT 1', array('date' => $topic->Date, 'id' => $topic->ID));
         $this->viewData['next'] = count($nq) > 0 ? $nq[0] : null;
 
         Templating::SetPageTitle($topic->Title);
@@ -51,7 +52,7 @@ class HomeController extends Controller
             ORDER BY A.OrderIndex',
             array('id' => $topic->ID));
 
-        $this->viewData['body_class'] = 'game-article';
+        $this->viewData['body_class'] = $topic->Class . ' ' . ($topic->Type == 'Dual' ? 'dual-article' : 'feature-article');
         return $this->View($topic);
     }
 

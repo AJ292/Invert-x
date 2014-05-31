@@ -231,7 +231,7 @@ class AdminController extends Controller {
         $article = new Article($id);
         $topic = $article->Get('Topic');
         if ($article->ID === null || ($topic->Published == 0 && $article->UserID != Authentication::GetUserID())) {
-            //return $this->RedirectToAction('EditArticle', 'Admin', $topic->ID);
+            return $this->RedirectToAction('EditArticle', 'Admin', $topic->ID);
         }
         $this->viewData['side'] = $article->OrderIndex > 0 ? 'right' : 'left';
         $this->viewData['banner'] = '/Banners/' . $topic->BannerImage;
@@ -245,11 +245,17 @@ class AdminController extends Controller {
     {
         $topic = new Topic($id);
         $articles = $topic->Find('Article');
-        $this->viewData['can_publish'] = count($articles) == 2 && $articles[0]->Ready && $articles[1]->Ready;
+        if ($topic->Type == 'Dual') {
+            $this->viewData['can_publish'] = count($articles) == 2 && $articles[0]->Ready && $articles[1]->Ready;
+        } else if ($topic->Type == 'Single') {
+            $this->viewData['can_publish'] = count($articles) == 1;
+        } else {
+            $this->viewData['can_publish'] = false;
+        }
         if (Post::IsPostBack() && $this->viewData['can_publish']) {
             $topic->Published = true;
             $topic->Save();
-            return $this->RedirectToRoute('/' . $topic->Url);
+            return $this->RedirectToRoute($topic->Url);
         }
         return $this->View($topic);
     }

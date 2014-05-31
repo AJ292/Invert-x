@@ -9,14 +9,8 @@
 		<link href='http://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="{resolve path='Content/Styles/normalize.css'}">
-        <link rel="stylesheet" href="{resolve path='Content/Styles/style-common.css'}">
-        <link rel="stylesheet" href="{resolve path='Content/Styles/style-index.css'}">
-        <link rel="stylesheet" href="{resolve path='Content/Styles/style-dual-article.css'}">
-        <link rel="stylesheet" href="{resolve path='Content/Styles/style-news-article.css'}">
-        <link rel="stylesheet" href="{resolve path='Content/Styles/style-basic-page.css'}">
-        <link rel="stylesheet" href="{resolve path='Content/Styles/style-nice-forms.css'}">
-        <link rel="stylesheet" href="{resolve path='Content/Styles/style-section-colours.css'}">
-        <link rel="stylesheet" href="{resolve path='Content/Styles/bbcode.css'}">
+        <link rel="stylesheet" href="{resolve path='Content/Styles/style-combined.css'}">
+                <link rel="stylesheet" href="{resolve path='Content/Styles/bbcode.css'}">
         <link rel="stylesheet" href="{resolve path='Content/Styles/phoenix.css'}">
 		<link rel="shortcut icon" href="{resolve path='Content/Images/favicon.png'}">
         <script type="text/javascript" src="{resolve path='Content/Scripts/jquery-1.8.2.min.js'}"></script>

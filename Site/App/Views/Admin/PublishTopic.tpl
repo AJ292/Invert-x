@@ -7,7 +7,12 @@
         {form}
         <div class="nice-forms nice-centered">
             <p>
-                Both authors are ready to publish this topic! Publishing will make the topic viewable to the public.
+                {if $model->Type == 'Dual'}
+                    Both authors are ready to publish this topic!
+                {else}
+                    You are ready to publish this topic!
+                {/if}
+                Publishing will make the topic viewable to the public.
             </p>
             <p>
                 {submit value='Publish Now!'}
@@ -16,7 +21,11 @@
         {/form}
     {else}
         <p>
-            One or both of the authors are not ready to publish this topic, please tell them to hurry up and finish their article!
+            {if $model->Type == 'Dual'}
+                One or both of the authors are not ready to publish this topic, please tell them to hurry up and finish their article!
+            {else}
+                The article for this topic could not be located! Something appears to be going wrong.
+            {/if}
         </p>
     {/if}
 </div>

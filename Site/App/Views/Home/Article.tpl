@@ -21,35 +21,24 @@
 
 <div class="post-container">
 
-    {$article = $articles[0]}
-    <div class="post-one">
-        <div class="author-container">
-            <div class="author-info">
-                <img src="{resolve path="Content/Avatars/{$article->AvatarImage}"}" alt="{$article->UserName}">
-                <br>By <span class="author-name">{$article->UserName}</span>
-            </div>
-            <h2>{$article->TagLine}</h2>
+    {if $model->Type == 'Dual'}
+        <div class="post-one">
+            {partial view=_Article model=$articles[0]}
         </div>
-        <div class="article-content">
-            {$article->HtmlContent}
+        <div class="post-two">
+            {partial view=_Article model=$articles[1]}
         </div>
-    </div>
-
-    {$article = $articles[1]}
-    <div class="post-two">
-        <div class="author-container">
-            <div class="author-info">
-                <img src="{resolve path="Content/Avatars/{$article->AvatarImage}"}" alt="{$article->UserName}">
-                <br>By <span class="author-name">{$article->UserName}</span>
-            </div>
-            <h2>{$article->TagLine}</h2>
-        </div>
-        <div class="article-content">
-            {$article->HtmlContent}
-        </div>
-    </div>
+    {else}
+        {partial view=_Article model=$articles[0]}
+    {/if}
 </div>
-<p class="closing-paragraph">Dear Esther is available on <a href="#">Steam</a> and other outlets.</p>
+
+{if $model->HtmlClosingText}
+    <div class="closing-paragraph">
+        {$model->HtmlClosingText}
+    </div>
+{/if}
+
 <ul class="site-tools">
     <li><a href="#"><img src="{resolve path='Content/Images/rss.png'}" alt="RSS"></a></li>
     <li><a href="#"><img src="{resolve path='Content/Images/facebook.png'}" alt="FB"></a></li>
