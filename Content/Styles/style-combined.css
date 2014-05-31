@@ -633,6 +633,7 @@ i, em {
 	overflow-x: hidden;
 	width: 100%;
 	font-size: .9em;
+	border-bottom: 1px solid #dedede;
 }
 
 .news-article-image {
@@ -640,18 +641,9 @@ i, em {
 	height: 200px;
 	background-size: cover;
 	background-position: center center;
-	margin: 0 25px 0 25px;
+	margin: 0 25px 25px 25px;
 	float: left;
 	display: block;
-	border-bottom: 20px solid white;
-}
-
-.games .news-article-image {
-	border-color: #E13C36;
-}
-
-.films .news-article-image {
-	border-color: #15948B;
 }
 
 .news-article h2 {
@@ -694,16 +686,20 @@ i, em {
 }
 
 .article-alert {
-	width: 95%;
-	margin: 0 25px 0 25px;
+	width: 100%;
+	font-size: 1.6em;
 	height: 60px;
-	background-color: #e13c36;
+	line-height: 60px;
 	color: #fff;
 	display: block;
+	font-family: 'Montserrat', sans-serif;
+	margin: 0 0 30px 0;
 }
 
-.article-alert h2 {
-	color: #fff;
+.article-alert img {
+	width: 40px;
+	margin: 10px 20px 0 20px;
+	float: left;
 }
 
 .right-column {
@@ -833,7 +829,7 @@ i, em {
 	color: #e13c36;
 }
 
-.games .index-article-header-master-container, .article-header-master-container, .games h2.shine-assign-header, .games h2.comments-header, .games .image, .games .discuss-image, .games .archive-current, .games .section-info, .games .promo-reel-item, .games .label-text {
+.games .index-article-header-master-container, .article-header-master-container, .games h2.shine-assign-header, .games h2.comments-header, .games .image, .games .discuss-image, .games .archive-current, .games .section-info, .games .promo-reel-item, .games .label-text, .games.article-alert  {
 	background-color: #e13c36;
 }
 
@@ -842,6 +838,6 @@ i, em {
 	color: #15948b;
 }
 
-.films .article-header-master-container, .films h2.shine-assign-header, .films h2.comments-header, .films .image, .films .image-left, .films .image-right, .films .discuss-image, .films .archive-current, .films .section-info, .films .promo-reel-item, .films .label-text {
+.films .article-header-master-container, .films h2.shine-assign-header, .films h2.comments-header, .films .image, .films .image-left, .films .image-right, .films .discuss-image, .films .archive-current, .films .section-info, .films .promo-reel-item, .films .label-text, .films.article-alert  {
 	background-color: #15948b;
 }
