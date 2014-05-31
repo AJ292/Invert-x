@@ -611,36 +611,93 @@ i, em {
 	background-position: left center !important;
 }
 
-.article-promo-reel {
-	margin: 0 auto;
-	height: 200px !important;
-	position: relative; 
-	overflow: auto; 
-	background: #fff;
-}
-
-.promo-reel-shape {
-	position: absolute;
-	z-index: 1000;
-	top: 0;
-}
-
-.article-promo-reel ul {
-	list-style-type: none;
-	padding: 0;
+.index-container {
+	width: 90%;
+	max-width: 1400px;
+	margin: 0px auto;
 	overflow-x: hidden;
-	background-color: #dedede;
+	display: table;
 }
 
-.article-promo-reel li {
-	list-style-type: none;
+.news-label {
+	position: absolute;
+	float: left;
+	margin: 20px 0 0 0;
 }
 
-.article-promo-reel ul li { 
-	float: left; 
-	margin: 0;
-	padding: 0;
-	overflow: hidden;
+.label-text {
+	color: #fff;
+	padding: 10%;
+	background-color: #333;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 900 !important;
+	line-height: 1.2em;
+	white-space: nowrap;
+	display: block;
+	width: 100%;
+	height: 16px;
+}
+
+.games .news-label:after {
+	background-image: url('../Images/game-news-label.svg');
+	content: " ";
+	height: 30px;
+	width: 25px;
+	display: block;
+}
+
+.films .news-label:after {
+	background-image: url('../Images/film-news-label.svg');
+	content: " ";
+	height: 30px;
+	width: 25px;
+	display: block;
+}
+
+.left-column {
+	display: table-cell;
+	overflow-x: hidden;
+	width: 70%;
+	margin: 0 auto;
+	padding: 0 40px 0 0;
+	background-color: #fff;
+}
+
+.news-article {
+	margin: 30px 30px 30px 0;
+	overflow-x: hidden;
+	width: 100%;
+	font-size: .9em;
+}
+
+.news-article-image {
+	width: 250px;
+	margin: 0 25px 25px 25px;
+	float: left;
+}
+
+.news-article h2 {
+	margin: 0 0 8px 0;	
+}
+
+.right-column {
+	padding: 0 40px 40px 40px;
+	width: 30%;
+	display: table-cell;
+	font-size: .85em;
+	background: #f7f7f7;
+}
+
+.right-column a {
+	color: #e13c36;	
+}	
+
+.right-column .site-tools {
+	float: none;
+	height: 60px;
+	margin: 0 auto;
+	display: block;
+	text-align: center;
 }
 
 .promo-reel-section {
@@ -669,7 +726,6 @@ i, em {
 
 .promo-reel-image img {
 	width: 100%;
-	
 }
 
 .promo-reel-item {
@@ -705,114 +761,6 @@ i, em {
 }
 
 .promo-reel-item a {
-}
-
-/*END PROMO REEL*/
-
-.index-container {
-	width: 90%;
-	max-width: 1400px;
-	margin: 0px auto;
-	overflow-x: hidden;
-	display: table;
-}
-
-.news-label {
-	position: absolute;
-	float: left;
-	margin: 20px 0 0 0;
-}
-
-.label-text {
-	background-color: red;
-	color: #fff;
-	padding: 10%;
-	font-family: 'Montserrat', sans-serif;
-	font-weight: 900 !important;
-	line-height: 1.2em;
-	white-space: nowrap;
-	display: block;
-	width: 100%;
-	height: 16px;
-}
-
-.news-label img {
-	width: 25px;
-}
-
-.ext-news-container {
-	float: right;
-	overflow-x: hidden;
-	width: 20%;
-	margin: 20px auto;
-	padding-left: 3%;
-}
-
-.ext-news-container h3 {
-	text-align: right;
-}
-
-.ext-news-article {
-	margin-bottom: 20px;
-	border-bottom: 1px solid #dedede;
-	overflow-x: hidden;
-}
-
-.ext-news-article-image {
-	width: 100%;
-}
-
-.ext-news-article h2 {
-	font-size: 1.2em;
-}
-
-.ext-news-article h2 a {
-}
-
-.left-column {
-	display: table-cell;
-	overflow-x: hidden;
-	width: 70%;
-	margin: 0 auto;
-	padding: 0 40px 0 0;
-	background-color: #fff;
-}
-
-.int-news-article {
-	margin: 30px 30px 30px 0;
-	overflow-x: hidden;
-	width: 100%;
-	font-size: .9em;
-}
-
-.int-news-article-image {
-	width: 250px;
-	margin: 0 25px 25px 25px;
-	float: left;
-}
-
-.int-news-article h2 {
-	margin: 0 0 8px 0;	
-}
-
-.int-news-article h2 a {
-
-}
-
-.right-column {
-	padding: 0 40px 40px 40px;
-	width: 30%;
-	display: table-cell;
-	font-size: .85em;
-	background: #f7f7f7;
-}
-
-.right-column .site-tools {
-	float: none;
-	height: 60px;
-	margin: 0 auto;
-	display: block;
-	text-align: center;
 }
 
 /*NEWS ARTICLE*/
@@ -862,7 +810,7 @@ i, em {
 	color: #e13c36;
 }
 
-.games .index-article-header-master-container, .article-header-master-container, .games h2.shine-assign-header, .games h2.comments-header, .games .image, .games .discuss-image, .games .archive-current, .games .section-info, .item-game {
+.games .index-article-header-master-container, .article-header-master-container, .games h2.shine-assign-header, .games h2.comments-header, .games .image, .games .discuss-image, .games .archive-current, .games .section-info, .item-game, .games .label-text {
 	background-color: #e13c36;
 }
 
@@ -871,6 +819,6 @@ i, em {
 	color: #15948b;
 }
 
-.films .article-header-master-container, .films h2.shine-assign-header, .films h2.comments-header, .films .image, .films .image-left, .films .image-right, .films .discuss-image, .films .archive-current, .films .section-info, .item-film {
+.films .article-header-master-container, .films h2.shine-assign-header, .films h2.comments-header, .films .image, .films .image-left, .films .image-right, .films .discuss-image, .films .archive-current, .films .section-info, .item-film, .films .label-text {
 	background-color: #15948b;
 }
