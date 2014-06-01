@@ -799,6 +799,15 @@ i, em {
 }
 
 /*NEWS ARTICLE*/
+.news .main-menu-nav li ul {
+	opacity: 1;
+	height: 40px;
+}
+
+.news .content-container {
+	margin-top: 80px;
+}
+
 .news .post-container {
 	margin: 0 auto;
 	border-top: 40px solid #ffffff;
