@@ -11,14 +11,21 @@ class HomeController extends Controller
             WHERE T.Published > 0
             ORDER BY T.Date DESC, ID DESC
             LIMIT 10');
-        $this->viewData['news'] = CustomQuery::Query(
-            'SELECT N.ID, N.Heading, N.HtmlSummary, N.Image, N.Created, U.ID, U.Name AS UserName, C.Class, S.Name AS SectionName
-            FROM News N
-            LEFT JOIN Users U ON N.UserID = U.ID
-            LEFT JOIN Categories C ON N.CategoryID = C.ID
-            LEFT JOIN NewsSections S ON N.SectionID = S.ID
+        $this->viewData['activities'] = CustomQuery::Query(
+            "SELECT *
+            FROM (
+                SELECT 'News' AS Type, N.ID, N.Heading, N.HtmlSummary, N.Image, N.Created, U.ID AS UserID, U.Name AS UserName, C.Class, S.Name AS SectionName
+                FROM News N
+                LEFT JOIN Users U ON N.UserID = U.ID
+                LEFT JOIN Categories C ON N.CategoryID = C.ID
+                LEFT JOIN NewsSections S ON N.SectionID = S.ID
+                UNION
+                SELECT 'Topic' AS Type, T.ID, T.Title, T.Url, T.ArchivesImage, T.Date, 0, '', C.Class, ''
+                FROM Topics T
+                LEFT JOIN Categories C ON T.CategoryID = C.ID
+            ) A
             ORDER BY Created DESC
-            LIMIT 10'
+            LIMIT 15"
         );
         $this->viewData['body_class'] = 'home';
         return $this->View();
@@ -52,14 +59,32 @@ class HomeController extends Controller
             ORDER BY A.OrderIndex',
             array('id' => $topic->ID));
 
+        $this->viewData['tags'] = Query::Create('TopicTag')
+                ->Where('TopicID', '=', $topic->ID)
+                ->All();
         $this->viewData['body_class'] = $topic->Class . ' ' . ($topic->Type == 'Dual' ? 'dual-article' : 'feature-article');
         return $this->View($topic);
     }
 
-    function News()
+    function News($id)
     {
-        $this->viewData['body_class'] = 'game-article';
-        return $this->View();
+        $news = CustomQuery::Query(
+            'SELECT N.ID, N.Heading, N.Image, N.HtmlContent, N.Created, U.Name AS UserName, U.AvatarImage, C.Class, S.Name AS SectionName
+            FROM News N
+            LEFT JOIN Users U ON N.UserID = U.ID
+            LEFT JOIN Categories C ON N.CategoryID = C.ID
+            LEFT JOIN NewsSections S ON N.SectionID = S.ID
+            WHERE N.ID = :id',
+            array('id' => $id));
+
+        if (count($news) == 0) return $this->RedirectToAction('Index');
+        $news = $news[0];
+
+        $this->viewData['tags'] = Query::Create('NewsTag')
+                ->Where('NewsID', '=', $id)
+                ->All();
+        $this->viewData['body_class'] = $news->Class . ' ' . 'news';
+        return $this->View($news);
     }
 
     function Category($id)
@@ -68,6 +93,11 @@ class HomeController extends Controller
         $this->viewData['body_class'] = 'game-article';
         return $this->View($cat);
     }
-}
 
-?>
+    function Tag($tag)
+    {
+        $cat = new Category($id);
+        $this->viewData['body_class'] = 'game-article';
+        return $this->View($cat);
+    }
+}

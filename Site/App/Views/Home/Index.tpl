@@ -10,45 +10,25 @@
     </div>
 {/content}
 
-<style>
-    /* Proposed changes */
-    .news-article-image {
-        border: 1px solid white;
-        border-radius: 4px;
-        box-shadow: 2px 2px 2px #CCCCCC;
-    }
-    .games .news-article-image {
-        border-color: #E13C36;
-    }
-    .films .news-article-image {
-        border-color: #15948B;
-    }
-</style>
-
 <div class="index-container">
 
     <div class="left-column">
 
-        {foreach $news as $n}
-            <div class="{$n->Class} news-article">
-                <div class="news-label">
-                    <span class="label-text">{$n->SectionName}</span>
+        {foreach $activities as $activity}
+            {if $activity->Type == 'News'}
+                <div class="{$activity->Class} news-article">
+                    <div class="news-label">
+                        <span class="label-text">{$activity->SectionName}</span>
+                    </div>
+                    <a class="news-article-image" href="#" style="background-image: url('{resolve path="Content/News/{$activity->Image}"}')"></a>
+                    <h2>{actlink text=$activity->Heading action=News controller=Home id=$activity->ID}</h2>
+                    <p><i>Published {Date::Format('j F, Y', $activity->Created)} by <strong>{$activity->UserName}</strong></i></p>
+                    <div>{$activity->HtmlSummary}</div>
                 </div>
-                <img src="{resolve path="Content/News/{$n->Image}"}" class="news-article-image" alt="{$n->Heading|escape}">
-                <h2>{actlink text=$n->Heading action=News controller=Home id=$n->ID}</h2>
-                <p><i>Published {Date::Format('j F, Y', $n->Created)} by <strong>{$n->UserName}</strong></i></p>
-                <div>{$n->HtmlSummary}</div>
-            </div>
+            {elseif $activity->Type == 'Topic'}
+                <a class="{$activity->Class} article-alert" href="{resolve path=$activity->HtmlSummary}"><img src="{resolve path='Content/Images/archive-icon.svg'}"> New article: {$activity->Heading}</a>
+            {/if}
         {/foreach}
-        <div class="games news-article">
-   						<div class="news-label">
-   							<span class="label-text">INVERT-Xtras</span>
-   						</div>
-   						<img src="{resolve path='Content/Images/contentMusic.jpg'}" class="news-article-image" alt="Article name">
-   						<h2><a href="game-news-article.html">Music of the Week: Magical Trick Society</a></h2>
-   						<p><i>Published 31 March, 2013 by <a href="#">AJ</a></i></p>
-   						<p>Kotaku has posted some excellent news on what Wright has been up to lately, with some great art to go with it. Well worth a read.</p>
-   					</div>
 
     </div>
 

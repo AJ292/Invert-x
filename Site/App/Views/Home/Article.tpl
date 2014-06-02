@@ -39,6 +39,18 @@
     </div>
 {/if}
 
+{if count($tags)}
+    <h3>
+        Tagged under:
+        {$first=true}
+        {foreach $tags as $tag}
+            {if !$first}, {/if}
+            {$first=false}
+            {actlink text=$tag->Tag action=Tag controller=Home tag=$tag->Tag}
+        {/foreach}
+    </h3>
+{/if}
+
 <ul class="site-tools">
     <li><a href="#"><img src="{resolve path='Content/Images/rss.png'}" alt="RSS"></a></li>
     <li><a href="#"><img src="{resolve path='Content/Images/facebook.png'}" alt="FB"></a></li>
