@@ -452,7 +452,11 @@ i, em {
 }
 
 /*ADMIN SECTION*/
-.admin-tools-column {
+.admin .article-header-container {
+	max-height: 400px;
+}
+
+.admin .admin-tools-column {
 	width: 495px;
 	float: left;
 	margin-bottom: 20px;

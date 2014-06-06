@@ -42,7 +42,7 @@ Film archives
 - Dates on all content?
 
 Game archives
-- Write explanatory paragraph
+- Write explanatory paragraph []
 - Dates on all content?
 
 About
@@ -50,7 +50,7 @@ About
 - Write disclaimer and legal information
 
 Contact page
-- Redesign contact page
+- Redesign contact page [N/A: To be replaced with mailto link]
 
 Dedicated mobile version of the site
 
