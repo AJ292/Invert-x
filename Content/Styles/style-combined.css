@@ -246,6 +246,12 @@ i, em {
 	margin-top: 40px;
 }
 
+.latest {
+	display: inline-block;
+	padding: 5px 10px 5px 10px;
+	margin-bottom: 10px;
+}
+
 .content-jump {
 	font-size: 4em;
 	position: absolute;
@@ -880,7 +886,7 @@ i, em {
 	color: #e13c36;
 }
 
-.games .index-article-header-master-container, .article-header-master-container, .games h2.shine-assign-header, .games h2.comments-header, .games .image, .games .discuss-image, .games .archive-current, .games .section-info, .games .promo-reel-item, .games .label-text, .games.article-alert  {
+.games .index-article-header-master-container, .article-header-master-container, .games h2.shine-assign-header, .games h2.comments-header, .games .image, .games .discuss-image, .games .archive-current, .games .section-info, .games .promo-reel-item, .games .label-text, .games.article-alert, .games .latest  {
 	background-color: #e13c36;
 }
 
@@ -889,6 +895,6 @@ i, em {
 	color: #15948b;
 }
 
-.films .article-header-master-container, .films h2.shine-assign-header, .films h2.comments-header, .films .image, .films .image-left, .films .image-right, .films .discuss-image, .films .archive-current, .films .section-info, .films .promo-reel-item, .films .label-text, .films.article-alert  {
+.films .article-header-master-container, .films h2.shine-assign-header, .films h2.comments-header, .films .image, .films .image-left, .films .image-right, .films .discuss-image, .films .archive-current, .films .section-info, .films .promo-reel-item, .films .label-text, .films.article-alert, .films .latest  {
 	background-color: #15948b;
 }
