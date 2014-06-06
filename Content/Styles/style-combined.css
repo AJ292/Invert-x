@@ -708,7 +708,7 @@ i, em {
 }
 
 .games .news-label:after {
-	background-image: url('../Images/game-news-label.svg');
+	background-image: url('../Images/label-game-news.svg');
 	content: " ";
 	height: 30px;
 	width: 25px;
@@ -716,7 +716,7 @@ i, em {
 }
 
 .films .news-label:after {
-	background-image: url('../Images/film-news-label.svg');
+	background-image: url('../Images/label-film-news.svg');
 	content: " ";
 	height: 30px;
 	width: 25px;
