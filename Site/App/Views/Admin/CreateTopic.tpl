@@ -1,10 +1,10 @@
 {partial view=_AdminShared}
 
-<div class="basic-page-container">
+<div class="post-container">
     <a rel="ajax" href="{action action=Index}">&lt; Back to Admin Panel</a>
     <h2>Create New {$Type} Topic</h2>
     {form upload=true}
-        <div class="nice-forms nice-centered">
+        <div class="nice-forms nice-960 nice-centered">
             <p>
                 {label for=Title}
                 {field for=Title}
@@ -54,7 +54,7 @@
             </p>
             {if $Type == 'Dual'}
             <p>
-                {label for=Users text='Authors' html_class='right'}<br>
+                {label for=Users text='Authors'}<br>
                 {select for=Users multiple=true multiple_style=checkbox}
                 {validation for=Users}
             </p>

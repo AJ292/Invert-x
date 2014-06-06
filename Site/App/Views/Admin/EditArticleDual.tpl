@@ -1,6 +1,6 @@
 {partial view=_AdminShared}
 
-<div class="basic-page-container">
+<div class="post-container">
     <a rel="ajax" href="{action action=Index}">&lt; Back to Admin Panel</a><br>
     <a rel="ajax" href="{action action=Topics}">&lt; Back to Topic List</a>
     <h2>Editing Articles For Topic: {$model->Title}</h2>

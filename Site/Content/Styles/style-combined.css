@@ -183,21 +183,17 @@ i, em {
 	padding: 0;
 	text-align: center;
 	height: 58px;
-	width: 200px;
 }
 
 .site-tools li {
-	height: 20px;
-	width: 20px;
+	height: 25px;
+	width: 25px;
 	display: inline-block;
 	margin: 0 20px 0 20px;
 }
 
 .site-tools img {
-	width: 18px;
-}
-
-.site-tools a {
+	width: 25px;
 }
 
 /*POST HEADER*/
@@ -223,6 +219,13 @@ i, em {
 	vertical-align: middle;
 	width: 100%;
 	max-width: 1400px;
+	background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0) 25%, rgba(0,0,0,0.5) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(25%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.5)));
+	background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0) 25%,rgba(0,0,0,0.5) 100%);
+	background: -o-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0) 25%,rgba(0,0,0,0.5) 100%);
+	background: -ms-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0) 25%,rgba(0,0,0,0.5) 100%);
+	background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0) 25%,rgba(0,0,0,0.5) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#80000000',GradientType=0 );
 }
 
 .topic-info a {
@@ -237,6 +240,16 @@ i, em {
 .topic-info h3 {
 	font-style: italic;
 	margin-top: 40px;
+}
+
+.topic-info .site-tools {
+	margin-top: 30px;
+}
+
+.latest {
+	display: inline-block;
+	padding: 5px 10px 5px 10px;
+	margin-bottom: 10px;
 }
 
 .content-jump {
@@ -308,6 +321,12 @@ i, em {
 	font-size: 1.4em;
 }
 
+.article-tags {
+	text-align: center;
+	font-size: 1em;
+	margin-bottom: 30px;
+}
+
 .post-one, .post-two {
 	overflow-x: hidden;
 }
@@ -323,7 +342,6 @@ i, em {
 }
 
 .author-name {
-	font-family: "Lato", sans-serif;
 	font-weight: 900;
 }
 
@@ -433,7 +451,11 @@ i, em {
 }
 
 /*ADMIN SECTION*/
-.admin-tools-column {
+.admin .article-header-container {
+	max-height: 400px;
+}
+
+.admin .admin-tools-column {
 	width: 495px;
 	float: left;
 	margin-bottom: 20px;
@@ -540,15 +562,15 @@ i, em {
 
 /*ARCHIVE PAGE*/
 .archive .article-header-container {
-	max-height: 640px;
+	max-height: 400px;
 }
 
 .archive .section-info {
 	width: 260px;
-	margin-top: 50px;
 	padding: 20px 20px 0 20px;
 	color: #fff;
-	float: right;
+	display: table-cell;
+	vertical-align: middle;
 }
 
 .archive .section-info h2 {
@@ -556,15 +578,27 @@ i, em {
 	color: #fff;
 }
 
+.archive .topic-info {
+	text-align: left;
+	padding: 100px 0 0 25px;
+}
+
+.archive .topic-info h1 {
+	font-size: 3em;
+}
+
+.archive .topic-info h2 {
+	font-size: 1.4em;
+}
+
 .archive .archive-container {
 	width: 90%;
-	margin: 60px auto;
+	margin: 0 auto;
 }
 
 .archive .recent-archive-container {
-	clear: both;
 	overflow-x: hidden;
-	margin: 20px auto 20px auto;
+	margin: 0 0 20px 20px;
 }
 
 .archive .archive-table {
@@ -584,17 +618,17 @@ i, em {
 	background-position: center center;
 	background-size: cover;
 	width: 160px;
-	height: 200px;
+	height: 160px;
 	text-align: center;
-	display: table;
-	margin-right: 20px;
+	display: table-cell;
+	margin: 0 20px 20px 0;
 }
 
 .archive .archive-table-poster a {
 	display: table-cell;
 	vertical-align: middle;
 	width: 160px;
-	height: 200px;
+	height: 160px;
 	background-color: rgba(0,0,0,.4);
 	color: #fff !important;
 	font-size: 1.6em;
@@ -605,6 +639,7 @@ i, em {
 	width: 280px;
 	display: inline-block;
 	vertical-align: top;
+	margin-bottom: 60px;
 }
 
 
@@ -673,7 +708,7 @@ i, em {
 }
 
 .games .news-label:after {
-	background-image: url('../Images/game-news-label.svg');
+	background-image: url('../Images/label-game-news.svg');
 	content: " ";
 	height: 30px;
 	width: 25px;
@@ -681,7 +716,7 @@ i, em {
 }
 
 .films .news-label:after {
-	background-image: url('../Images/film-news-label.svg');
+	background-image: url('../Images/label-film-news.svg');
 	content: " ";
 	height: 30px;
 	width: 25px;
@@ -737,6 +772,10 @@ i, em {
 	display: block;
 	text-align: center;
 }
+
+.right-column .site-tools li {
+	margin: 0 15px 0 15px;
+}	
 
 .promo-reel-section {
 	float: left;
@@ -817,7 +856,7 @@ i, em {
 .news .author-container {
 	width: 100px;
 	float: right;
-	margin: 0 0 20px 20px;
+	margin: 0 0 30px 30px;
 	text-align: center;
 	font-size: 0.8em;
 }
@@ -828,22 +867,22 @@ i, em {
 
 .news .news-article-leader-image {
 	float: left;
-	width: 440px;
-	margin: 0 25px 25px 25px;
+	width: 400px;
+	margin: 0 30px 30px 25px;
 }
 
 .news .news-article-leader-image img {
-	width: 440px;
+	width: 400px;
 }
 
 .news h1 {
-	font-size: 3em;
+	font-size: 2.8em;
 	margin-top: -10px;
 }
 
 .news h2 {
-	font-size: 1.5em;
-	margin-bottom: 25px;
+	font-size: 1.6em;
+	margin-bottom: 20px;
 }
 
 
@@ -854,7 +893,7 @@ i, em {
 	color: #e13c36;
 }
 
-.games .index-article-header-master-container, .article-header-master-container, .games h2.shine-assign-header, .games h2.comments-header, .games .image, .games .discuss-image, .games .archive-current, .games .section-info, .games .promo-reel-item, .games .label-text, .games.article-alert  {
+.games .index-article-header-master-container, .article-header-master-container, .games h2.shine-assign-header, .games h2.comments-header, .games .image, .games .discuss-image, .games .archive-current, .games .section-info, .games .promo-reel-item, .games .label-text, .games.article-alert, .games .latest  {
 	background-color: #e13c36;
 }
 
@@ -863,6 +902,6 @@ i, em {
 	color: #15948b;
 }
 
-.films .article-header-master-container, .films h2.shine-assign-header, .films h2.comments-header, .films .image, .films .image-left, .films .image-right, .films .discuss-image, .films .archive-current, .films .section-info, .films .promo-reel-item, .films .label-text, .films.article-alert  {
+.films .article-header-master-container, .films h2.shine-assign-header, .films h2.comments-header, .films .image, .films .image-left, .films .image-right, .films .discuss-image, .films .archive-current, .films .section-info, .films .promo-reel-item, .films .label-text, .films.article-alert, .films .latest  {
 	background-color: #15948b;
 }

@@ -1,6 +1,6 @@
 {partial view=_AdminShared}
 
-<div class="basic-page-container">
+<div class="post-container">
     <a rel="ajax" href="{action action=Index}">&lt; Back to Admin Panel</a>
     <h2>Newses</h2>
     <ul class="admin-list">

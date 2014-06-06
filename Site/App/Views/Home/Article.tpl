@@ -40,7 +40,7 @@
 {/if}
 
 {if count($tags)}
-    <h3>
+    <h3 class="article-tags">
         Tagged under:
         {$first=true}
         {foreach $tags as $tag}
@@ -52,9 +52,10 @@
 {/if}
 
 <ul class="site-tools">
-    <li><a href="#"><img src="{resolve path='Content/Images/rss.png'}" alt="RSS"></a></li>
-    <li><a href="#"><img src="{resolve path='Content/Images/facebook.png'}" alt="FB"></a></li>
-    <li><a href="#"><img src="{resolve path='Content/Images/google.png'}" alt="G+"></a></li>
+    <li><a href="#"><img src="{resolve path='Content/Images/social-rss.svg'}" alt="RSS"></a></li>
+    <li><a href="#"><img src="{resolve path='Content/Images/social-facebook.svg'}" alt="FB"></a></li>
+    <li><a href="#"><img src="{resolve path='Content/Images/social-reddit.svg'}" alt="Reddit"></a></li>
+    <li><a href="#"><img src="{resolve path='Content/Images/social-twitter.svg'}" alt="Twitter"></a></li>
 </ul>
 <h2 class="comments-header">COMMENTS</h2>
 <div class="comments">

@@ -1,11 +1,11 @@
 {partial view=_AdminShared}
 
-<div class="basic-page-container">
+<div class="post-container">
     <a rel="ajax" href="{action action=EditArticle id=$model->ID}">&lt; Back to Edit Page</a>
     <h2>Publish Article</h2>
     {if $can_publish}
         {form}
-        <div class="nice-forms nice-centered">
+        <div class="nice-forms nice-960 nice-centered">
             <p>
                 {if $model->Type == 'Dual'}
                     Both authors are ready to publish this topic!

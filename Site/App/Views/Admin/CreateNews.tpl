@@ -1,10 +1,10 @@
 {partial view=_AdminShared}
 
-<div class="basic-page-container">
+<div class="post-container">
     <a rel="ajax" href="{action action=Index}">&lt; Back to Admin Panel</a>
     <h2>Create New News</h2>
     {form upload=true}
-        <div class="nice-forms nice-centered">
+        <div class="nice-forms nice-960 nice-centered">
             <p>
                 {label for=Heading}
                 {field for=Heading}
@@ -14,6 +14,11 @@
                 {label for=CategoryID text=Category}
                 {select for=CategoryID}
                 {validation for=CategoryID}
+            </p>
+            <p>
+                {label for=SectionID text=Section}
+                {select for=SectionID}
+                {validation for=SectionID}
             </p>
             <p>
                 {label for=Image text='Image'}

@@ -3,6 +3,7 @@
     <script type="text/javascript" src="{resolve path='Content/Scripts/select2.min.js'}"></script>
     <script type="text/javascript" src="{resolve path='Content/Scripts/Admin.js'}"></script>
     <link rel="stylesheet" href="{resolve path='Content/Styles/select2.css'}" />
+    <link rel="stylesheet" href="{resolve path='Content/Styles/style-nice-forms.css'}" />
     <style type="text/css">
         @import "https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/themes/dot-luv/jquery-ui.css";
     </style>
@@ -10,15 +11,15 @@
         .content-container {
             overflow: hidden;
         }
-        .basic-page-container {
+        .post-container {
             transition: all 0.2s ease-in-out;
             left: 0;
             position: relative;
         }
-        .basic-page-container.hide-left {
+        .post-container.hide-left {
             left: -100%;
         }
-        .basic-page-container.hide-right {
+        .post-container.hide-right {
             transition: none;
             left: 100%;
         }
@@ -34,6 +35,10 @@
 
         .select2-container {
             width: 100%;
+        }
+
+        .admin .article-header-container {
+            background-position: center;
         }
     </style>
 {/content}

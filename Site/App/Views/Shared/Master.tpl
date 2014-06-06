@@ -10,7 +10,7 @@
 		<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="{resolve path='Content/Styles/normalize.css'}">
         <link rel="stylesheet" href="{resolve path='Content/Styles/style-combined.css'}">
-                <link rel="stylesheet" href="{resolve path='Content/Styles/bbcode.css'}">
+        <link rel="stylesheet" href="{resolve path='Content/Styles/bbcode.css'}">
         <link rel="stylesheet" href="{resolve path='Content/Styles/phoenix.css'}">
 		<link rel="shortcut icon" href="{resolve path='Content/Images/favicon.png'}">
         <script type="text/javascript" src="{resolve path='Content/Scripts/jquery-1.8.2.min.js'}"></script>
@@ -32,8 +32,8 @@
                 All opinions expressed on the site are that of their authors.
             </p>
             <p>
-                <a href="http://scrub-studios.com"><img src="{resolve path='Content/Images/scrub-logo.png'}" alt="Scrub"></a>
-                <a href="http://logic-and-trick.com/"><img src="{resolve path='Content/Images/lnt-logo.png'}" alt="Logic & Trick"></a>
+                <a href="http://scrub-studios.com"><img src="{resolve path='Content/Images/logo-scrub.png'}" alt="Scrub"></a>
+                <a href="http://logic-and-trick.com/"><img src="{resolve path='Content/Images/logo-lnt.png'}" alt="Logic & Trick"></a>
             </p>
             <p>
                 {actlink text='Admin Login' action=Index controller=Admin}

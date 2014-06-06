@@ -1,11 +1,11 @@
 {partial view=_AdminShared}
 
-<div class="basic-page-container">
+<div class="post-container">
     <a rel="ajax" href="{action action=Index}">&lt; Back to Admin Panel</a><br>
     <a rel="ajax" href="{action action=EditArticle id=$model->ID}">&lt; Back to Article Edit Page</a>
     <h2>Edit Topic: {$origtitle}</h2>
     {form upload=true}
-        <div class="nice-forms nice-centered">
+        <div class="nice-forms nice-960 nice-centered">
             <p>
                 {label for=Title}
                 {field for=Title model=$model}

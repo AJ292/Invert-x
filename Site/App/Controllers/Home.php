@@ -23,8 +23,9 @@ class HomeController extends Controller
                 SELECT 'Topic' AS Type, T.ID, T.Title, T.Url, T.ArchivesImage, T.Date, 0, '', C.Class, ''
                 FROM Topics T
                 LEFT JOIN Categories C ON T.CategoryID = C.ID
+                WHERE T.Published > 0
             ) A
-            ORDER BY Created DESC
+            ORDER BY Created DESC, ID DESC
             LIMIT 15"
         );
         $this->viewData['body_class'] = 'home';

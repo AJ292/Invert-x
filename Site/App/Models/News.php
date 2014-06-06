@@ -29,6 +29,7 @@ class News extends Model
     public $validation = array(
         //'UserID' => array('required'),
         'CategoryID' => array('required'),
+        'SectionID' => array('required'),
         'Heading' => array('required'),
         'Image' => array('required'),
         'Summary' => array('required'),

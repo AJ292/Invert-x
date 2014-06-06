@@ -32,7 +32,7 @@ class AdminController extends Controller {
         $this->viewData['no_topic'] = true;
         $this->viewData['banner'] = $banners[mt_rand(0, count($banners) - 1)];
         $this->viewData['joke'] = $joke_options[mt_rand(0, count($joke_options) - 1)];
-        $this->viewData['body_class'] = 'game-article';
+        $this->viewData['body_class'] = 'games admin';
         Templating::SetPageTitle('Here Be Dragons!');
     }
 
@@ -299,6 +299,7 @@ class AdminController extends Controller {
         $this->viewData['NewsTags'] = Post::Get('NewsTags');
 
         $this->viewData['CategoryID'] = Query::Create('Category')->All();
+        $this->viewData['SectionID'] = Query::Create('NewsSection')->All();
 
         return $this->View($model);
     }
@@ -360,6 +361,7 @@ class AdminController extends Controller {
         $this->viewData['NewsTags'] = implode(',', $tags);
 
         $this->viewData['CategoryID'] = Query::Create('Category')->All();
+        $this->viewData['SectionID'] = Query::Create('NewsSection')->All();
 
         return $this->View($model);
     }

@@ -1,6 +1,6 @@
 {partial view=_AdminShared}
 
-<div class="basic-page-container">
+<div class="post-container">
     <div class="admin-tools-column">
         <h2>Article Tools</h2>
         <ul class="admin-nav">

@@ -1,6 +1,6 @@
 {partial view=_AdminShared}
 
-<div class="basic-page-container">
+<div class="post-container">
     <a rel="ajax" href="{action action=Index}">&lt; Back to Admin Panel</a><br>
     <a rel="ajax" href="{action action=Topics}">&lt; Back to Topic List</a>
     <h2>Editing Article For Topic: {$model->Title}</h2>
@@ -16,7 +16,7 @@
             {$cn = preg_replace('/[a-z0-9]/i', '?', $cn)}
         {/if}
         {form}
-            <div class="post-single nice-forms nice-full">
+            <div class="post-single nice-forms nice-960">
                 <p>
                     {hidden for=ID model=$art}
                     {label for=UserID text='Author'}

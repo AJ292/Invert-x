@@ -1,6 +1,6 @@
 {partial view=_AdminShared}
 
-<div class="basic-page-container">
+<div class="post-container">
     <a rel="ajax" href="{action action=EditNews id=$model->ID}">&lt; Back to News Post</a>
     <h2>Delete News: {$model->Heading}</h2>
     {form}

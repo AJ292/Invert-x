@@ -9,7 +9,7 @@
     </div>
 {/content}
 
-<div class="basic-page-container">
+<div class="post-container">
     <a rel="ajax" href="{action action=EditArticle id=$topic->ID}">&lt; Back to Edit Page</a>
     <h2>Preview Article</h2>
     {if strlen(trim($topic->NewsText)) > 0}

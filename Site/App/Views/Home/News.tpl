@@ -5,6 +5,9 @@
             By <span class="author-name">{$model->UserName}</span>
         </p>
     </div>
+    <div class="news-label">
+        <span class="label-text">{$model->SectionName}</span>
+    </div>
     <div class="news-article-leader-image">
         <img src="{resolve path="Content/News/{$model->Image}"}">
     </div>

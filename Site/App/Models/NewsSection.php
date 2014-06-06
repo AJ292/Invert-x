@@ -2,7 +2,7 @@
 
 class NewsSection extends Model
 {
-    public $table = 'NewsSection';
+    public $table = 'NewsSections';
     public $columns = array(
         'ID'          => 'ID',
         'Name'        => 'Name'
