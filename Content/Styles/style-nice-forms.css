@@ -47,6 +47,11 @@ div.nice-forms input[type='checkbox']
     height: auto;
 }
 
+.admin .nice-forms input[type='checkbox'] 
+{
+	margin-left: 0 !important;
+}
+
 div.nice-forms input[type='submit']
 {
     width: auto !important;

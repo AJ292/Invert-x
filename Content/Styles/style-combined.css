@@ -154,6 +154,10 @@ i, em {
 	margin: 0 auto;
 }
 
+.main-menu-logo a:hover {
+	text-decoration: none; 
+}
+
 .menu-nav-x {
 	height: 60px;
 	margin: 10px 0 0 0;
@@ -451,8 +455,28 @@ i, em {
 }
 
 /*ADMIN SECTION*/
+.admin .content-container {
+	overflow: hidden;
+}
+
 .admin .article-header-container {
 	max-height: 400px;
+	background-position: center;
+}
+
+.admin .post-container {
+	transition: all 0.2s ease-in-out;
+	left: 0;
+	position: relative;
+}
+
+.post-container.hide-left {
+	left: -100%;
+}
+
+.post-container.hide-right {
+	transition: none;
+	left: 100%;
 }
 
 .admin .admin-tools-column {
@@ -483,22 +507,16 @@ i, em {
 	margin: 0 10px 0 0;
 }
 
-.archive-table {
-	border-collapse: collapse;
-	width: 990px;
-	text-align: center;
-	margin-top: 20px;
+.post-left {
+	float: left;
 }
 
-.archive-table td {
-	width: 320px;
-	padding: 0 0 28px 0;
+.post-right {
+	float: right;
 }
 
-.archive-list {
-	width: 280px;
-	display: inline-block;
-	vertical-align: top;
+.select2-container {
+	width: 100%;
 }
 
 /*DUAL AUTHOR, COLUMN*/
