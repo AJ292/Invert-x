@@ -183,21 +183,17 @@ i, em {
 	padding: 0;
 	text-align: center;
 	height: 58px;
-	width: 200px;
 }
 
 .site-tools li {
-	height: 20px;
-	width: 20px;
+	height: 25px;
+	width: 25px;
 	display: inline-block;
 	margin: 0 20px 0 20px;
 }
 
 .site-tools img {
-	width: 18px;
-}
-
-.site-tools a {
+	width: 25px;
 }
 
 /*POST HEADER*/
@@ -244,6 +240,10 @@ i, em {
 .topic-info h3 {
 	font-style: italic;
 	margin-top: 40px;
+}
+
+.topic-info .site-tools {
+	margin-top: 30px;
 }
 
 .latest {
@@ -342,7 +342,6 @@ i, em {
 }
 
 .author-name {
-	font-family: "Lato", sans-serif;
 	font-weight: 900;
 }
 
@@ -773,6 +772,10 @@ i, em {
 	display: block;
 	text-align: center;
 }
+
+.right-column .site-tools li {
+	margin: 0 15px 0 15px;
+}	
 
 .promo-reel-section {
 	float: left;
