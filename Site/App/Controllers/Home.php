@@ -91,7 +91,25 @@ class HomeController extends Controller
     function Category($id)
     {
         $cat = new Category($id);
-        $this->viewData['body_class'] = 'game-article';
+        $topics = CustomQuery::Query(
+                    'SELECT T.ID, T.Url, T.Title, T.TagLine, T.Date, T.ArchivesImage, T.BannerImage, C.Class
+                    FROM Topics T
+                    LEFT JOIN Categories C ON T.CategoryID = C.ID
+                    WHERE T.Published > 0
+                    AND CategoryID = :id
+                    ORDER BY T.Date DESC, ID DESC',
+                    array('id' => $id));
+
+        $this->viewData['latest'] = $topics[0];
+        $this->viewData['recent'] = array_slice($topics, 1, 10);
+        $rem = array_slice($topics, 10);
+        $len = ceil(count($rem) / 3);
+        $this->viewData['remaining'] = array(
+            array_slice($rem, 0, $len),
+            array_slice($rem, $len, $len),
+            array_slice($rem, $len * 2)
+        );
+        $this->viewData['body_class'] = $cat->Class . ' archive';
         return $this->View($cat);
     }
 
@@ -100,5 +118,11 @@ class HomeController extends Controller
         $cat = new Category($id);
         $this->viewData['body_class'] = 'game-article';
         return $this->View($cat);
+    }
+
+    function About()
+    {
+        $this->viewData['body_class'] = 'games basic-page';
+        return $this->View();
     }
 }

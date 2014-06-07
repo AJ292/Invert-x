@@ -1,5 +1,5 @@
 {content name=Header}
-    {$latest = $topics[0]}
+    {$latest=$topics[0]}
     <div class="article-header-container" style="background-image: url('{resolve path="Content/Banners/{$latest->BannerImage}"}');">
         <div class="topic-info {$latest->Class}">
             <h4 class="latest">Latest feature</h4>
