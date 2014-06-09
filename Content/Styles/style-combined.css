@@ -728,6 +728,7 @@ i, em {
 
 .news-article-content {
 	display: table-cell;
+	vertical-align: top;
 }
 
 .news-article h2 {
@@ -800,9 +801,10 @@ i, em {
 }
 
 .right-column {
-	padding: 0 40px 40px 40px;
+	padding: 40px;
 	width: 30%;
 	display: table-cell;
+	vertical-align: top;
 	font-size: .85em;
 	background: #f7f7f7;
 }
@@ -934,12 +936,15 @@ i, em {
 
 .news h1 {
 	font-size: 2.8em;
-	margin-top: -10px;
 }
 
 .news h2 {
 	font-size: 1.6em;
 	margin-bottom: 20px;
+}
+
+.news .article-tags {
+	text-align: left;
 }
 
 /*TAG PAGE*/
@@ -982,7 +987,6 @@ i, em {
 
 .tagged h1 {
 	font-size: 2.4em;
-
 }
 
 .tagged h2 {
