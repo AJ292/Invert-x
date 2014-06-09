@@ -78,6 +78,28 @@ i, em {
 	font-style: italic;
 }
 
+.search {
+	text-align: center;
+}
+
+.search p {
+	display: inline-block;
+}
+
+.search img {
+	width: 25px;
+	margin: 5px 20px 0 0;
+}
+
+.search input {
+	display: inline-block;
+	font-size: 1.0em;
+	font-family: 'Roboto Slab', serif;
+	padding: 5px;
+	margin: 2px 0 0 0;
+	border: 1px solid #dedede;
+}
+
 /*BBCODE*/
 .bb-subheading {
 	font-family: 'Montserrat', sans-serif;
@@ -796,6 +818,27 @@ i, em {
 
 .right-column .site-tools li {
 	margin: 0 15px 0 15px;
+}
+
+.right-column .search {
+	text-align: center;
+}
+
+.right-column .search p {
+	display: inline-block;
+}
+
+.right-column .search img {
+	width: 30px;
+	margin: 5px 20px 0 0;
+}
+
+.right-column .search input {
+	display: inline-block;
+	font-size: 1.2em;
+	font-family: 'Roboto Slab', serif;
+	padding: 10px;
+	border: 1px solid #dedede;
 }	
 
 .promo-reel-section {
