@@ -464,7 +464,7 @@ i, em {
 
 /*BASIC PAGE*/
 .basic-page .article-header-container, .basic-page .article-header {
-	height: 400px !important;
+	height: 440px !important;
 	background-position: center;
 }
 
@@ -604,7 +604,7 @@ i, em {
 
 /*ARCHIVE PAGE*/
 .archive .article-header-container {
-	max-height: 400px;
+	max-height: 440px;
 }
 
 .archive .section-info {
@@ -893,19 +893,21 @@ i, em {
 }
 
 /*NEWS ARTICLE*/
+.news .main-menu-container {
+	height: 140px;
+}
+
 .news .main-menu-nav li ul {
 	opacity: 1;
 	height: 40px;
 }
 
 .news .content-container {
-	margin-top: 80px;
+	margin-top: 140px;
 }
 
 .news .post-container {
 	margin: 0 auto;
-	border-top: 40px solid #ffffff;
-	border-bottom: 40px solid #ffffff;
 }
 
 .news .author-container {
