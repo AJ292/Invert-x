@@ -209,7 +209,7 @@ i, em {
 	margin: 0 auto;
 	padding: 0;
 	text-align: center;
-	height: 58px;
+	height: 60px;
 }
 
 .site-tools li {
@@ -244,8 +244,6 @@ i, em {
 	margin: 0 auto;
 	display: table-cell;
 	vertical-align: middle;
-	width: 100%;
-	max-width: 1400px;
 	background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0) 25%, rgba(0,0,0,0.5) 100%);
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(25%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.5)));
 	background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0) 25%,rgba(0,0,0,0.5) 100%);
@@ -271,6 +269,10 @@ i, em {
 
 .topic-info .site-tools {
 	margin-top: 30px;
+}
+
+.topic-info .site-tools img {
+	width: 30px;
 }
 
 .latest {
@@ -809,18 +811,6 @@ i, em {
 	color: #e13c36;	
 }	
 
-.right-column .site-tools {
-	float: none;
-	height: 60px;
-	margin: 0 auto;
-	display: block;
-	text-align: center;
-}
-
-.right-column .site-tools li {
-	margin: 0 15px 0 15px;
-}
-
 .right-column .search {
 	text-align: center;
 }
@@ -831,7 +821,7 @@ i, em {
 
 .right-column .search img {
 	width: 30px;
-	margin: 5px 20px 0 0;
+	margin: 10px 20px 0 0;
 }
 
 .right-column .search input {
