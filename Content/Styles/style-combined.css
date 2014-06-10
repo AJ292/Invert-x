@@ -1018,3 +1018,79 @@ i, em {
 .films .article-header-master-container, .films h2.shine-assign-header, .films h2.comments-header, .films .image, .films .image-left, .films .image-right, .films .discuss-image, .films .archive-current, .films .section-info, .films .promo-reel-item, .films .label-text, .films.article-alert, .films .latest  {
 	background-color: #15948b;
 }
+
+/*MEDIA QUERIES*/
+@media screen and (max-width:1100px){
+
+}
+
+@media screen and (max-width:989px){
+
+}
+
+@media screen and (max-width:614px){
+	html {
+		min-width: 100%;
+		font-size: .6em;
+	}
+	
+	body {
+		min-width: 100%;
+	}
+	
+	h1 {
+		margin: 0;
+	}
+	
+	.main-menu-nav li ul {
+		display: none;
+	}
+	
+	.main-menu-logo a {
+		width: auto;
+	}
+	
+	.article-header-container {
+		margin-top: 0;
+		height: 60%;
+	}
+	
+	.topic-info {
+		padding: 20% 0 0 0;
+		font-size: .8em;
+		white-space: normal;
+	}
+	
+	.topic-info h2 {
+		margin: 10px 10px 0 10px;
+	}
+	
+	.topic-info h3 {
+		margin: 20px 10px 0 10px;
+	}
+	
+	.content-container {
+		width: 100%;
+		padding: 0;
+	}
+	
+	.left-column {
+		padding: 0;
+		width: 100%;
+	}
+	
+	.news-article-image {
+		width: 100px;
+		height: 100px;
+		margin: 0 15px 15px 25px;
+	}
+	
+	.alert-date {
+		display: none;	
+	}
+	
+	.right-column {
+		display: none;
+	}
+
+}
