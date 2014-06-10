@@ -1128,10 +1128,22 @@ i, em {
 	
 	.author-container {
 		min-height: inherit !important;
+		width: 100% !important;
+		float: none !important;
+		margin-right: 0 !important;
 	}
 	
 	.author-info img {
 		width: 100px;
+	}
+	
+	.feature-article .author-container {
+		padding-top: 20px; 
+	}
+	
+	.feature-article .image-left, .feature-article .image-right {
+		float: none;
+		width: 100%;
 	}
 	
 	.post-one, .post-two {
