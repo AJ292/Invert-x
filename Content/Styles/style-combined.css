@@ -364,13 +364,19 @@ i, em {
 
 .author-container {
 	width: 100%;
-	margin-bottom: 10%;
+	min-height: 140px;
+	margin: 0 0 30px 0;
 }
 
 .author-info {
 	text-align: center;
 	display: table-cell;
 	vertical-align: top;
+	width: 100px;
+}
+
+.author-info img {
+	width: 100px;
 }
 
 .author-name {
@@ -380,7 +386,7 @@ i, em {
 .author-content {
 	display: table-cell;
 	vertical-align: top;
-	padding: 0 20px 0 20px;
+	padding: 0 30px 0 30px;
 }
 
 /*IMAGES*/
@@ -448,7 +454,7 @@ i, em {
 #footer {
 	text-align: center;
 	margin: 0 auto 0 auto;
-	padding: 20px 0 20px 0;
+	padding: 30px 0 30px 0;
 	color: #fff;
     width: 100%;
     background-color: #262626;
@@ -579,7 +585,7 @@ i, em {
 .feature-article .author-container {
 	width: 50%;
 	float: left;
-	margin: 0 5% 0 0;
+	margin-right: 30px;
 }
 
 .feature-article .post-container p {
