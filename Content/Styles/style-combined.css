@@ -1045,11 +1045,24 @@ i, em {
 	}
 	
 	.main-menu-nav li ul {
-		display: none;
+		display: block;
+		float: left;
+		width: 75%;
+		opacity: 1;
+		height: 100%;
+		background-color: #000;
+	}
+	
+	.main-menu-nav li ul li {
+		display: block;
 	}
 	
 	.main-menu-logo a {
 		width: auto;
+	}
+	
+	.main-menu-logo:hover > ul {
+		height: inherit;
 	}
 	
 	.article-header-container {
