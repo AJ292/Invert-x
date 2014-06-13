@@ -1022,7 +1022,18 @@ i, em {
 }
 
 /*MEDIA QUERIES*/
-@media screen and (max-width:1024px){
+@media screen and (max-width:1360px){
+	.content-container {
+		width: 100%;
+	}
+	
+	
+	.right-column .site-tools li {
+		margin: 0 15px 0 15px;
+	}
+}
+
+@media screen and (max-width:1100px){
 	html {
 		min-width: 100%;
 	}
@@ -1036,7 +1047,6 @@ i, em {
 	}
 	
 	.content-container {
-		width: 100%;
 		padding: 0;
 	}
 	
@@ -1062,9 +1072,8 @@ i, em {
 
 }
 
-@media screen and (max-width:614px){
+@media screen and (max-width:768px){
 	html {
-		font-size: .6em;
 	}
 	
 	h1 {
