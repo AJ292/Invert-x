@@ -1073,9 +1073,6 @@ i, em {
 }
 
 @media screen and (max-width:768px){
-	html {
-	}
-	
 	h1 {
 		margin: 0;
 	}
@@ -1221,5 +1218,19 @@ i, em {
 	#footer p {
 		margin-left: 20px;
 		margin-right: 20px;
+	}
+}
+
+@media screen and (max-width:614px){
+	html {
+		font-size: .6em;
+	}
+	
+	p {
+		font-size: 1.2em;
+	}
+	
+	.post-one {
+		margin-top: 0;
 	}
 }
