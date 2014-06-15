@@ -1233,4 +1233,12 @@ i, em {
 	.post-one {
 		margin-top: 0;
 	}
+	
+	.post-container {
+		padding-top: 20px;
+	}
+	
+	.author-container {
+		padding-top: 0 !important;
+	}
 }
