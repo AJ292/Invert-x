@@ -228,7 +228,7 @@ i, em {
 	height: 100%;
 	max-height: 800px;
 	width: 100%;
-	background-position: left top;
+	background-position: center top;
 	background-repeat: no-repeat;
 	background-size: cover;
 	position: relative;
@@ -1027,7 +1027,6 @@ i, em {
 		width: 100%;
 	}
 	
-	
 	.right-column .site-tools li {
 		margin: 0 15px 0 15px;
 	}
@@ -1068,31 +1067,13 @@ i, em {
 	}
 }
 
-@media screen and (max-width:989px){
-
-}
-
 @media screen and (max-width:768px){
 	h1 {
 		margin: 0;
 	}
 	
-	button {
-		border: none;
-		padding: 0.6em 1.2em;
-		background: #388a5a;
-		color: #fff;
-		font-size: 1em;
-		letter-spacing: 1px;
-		text-transform: uppercase;
-		cursor: pointer;
-		display: inline-block;
-		margin: 3px 2px;
-		border-radius: 2px;
-	}
-	
 	.main-menu-nav li ul {
-		display: block;
+		display: none;
 		float: left;
 		width: 75%;
 		height: 100%;
@@ -1113,11 +1094,11 @@ i, em {
 	
 	.article-header-container {
 		margin-top: 0;
-		height: 60%;
+		height: 60% !important;
 	}
 	
-	.topic-info {
-		padding: 20% 0 0 0;
+	.topic-info, .basic-page .topic-info {
+		padding: 20% 0 0 0 !important;
 		font-size: .8em;
 		white-space: normal;
 	}
@@ -1180,6 +1161,10 @@ i, em {
 		display: none;
 	}
 	
+	.basic-page .article-header-container, .basic-page .article-header {
+		height: 60% !important;
+	}
+	
 	.author-container {
 		min-height: inherit !important;
 		width: 100% !important;
@@ -1207,7 +1192,6 @@ i, em {
 	}
 	
 	.post-one {
-		margin-top: 20px;
 		border-bottom: 1px solid #dedede;
 	}
 	
@@ -1224,6 +1208,11 @@ i, em {
 @media screen and (max-width:614px){
 	html {
 		font-size: .6em;
+	}
+	
+	h1, h2, h3, h4, h5 {
+		margin-left: 20px;
+		margin-right: 20px;
 	}
 	
 	p {
