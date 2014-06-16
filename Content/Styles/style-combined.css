@@ -1183,6 +1183,8 @@ i, em {
 	.feature-article .image-left, .feature-article .image-right {
 		float: none;
 		width: 100%;
+		margin-left: 0;
+		margin-right: 0;
 	}
 	
 	.post-one, .post-two {
