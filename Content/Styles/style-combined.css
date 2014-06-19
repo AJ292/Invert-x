@@ -389,7 +389,7 @@ i, em {
 	padding: 0 30px 0 30px;
 }
 
-/*IMAGES*/
+/*IMAGES & VIDEOS*/
 .image {
 	margin: 0 auto 30px auto;
 	padding-bottom: 10px;
@@ -408,6 +408,31 @@ i, em {
 
 .image img {
 	width: 100%;
+}
+
+.video {
+	margin: 0 auto 30px auto;
+	padding-bottom: 60%;
+	width: 100%;
+	color: #fff;
+	font-weight: 900;
+	font-size: 1.0em;
+	position: relative;
+}
+
+.video p {
+	position: absolute;
+	bottom: 10px;
+	width: 100%;
+	margin: 0;
+	font-family: 'Montserrat', sans-serif;
+	text-align: center !important;		
+}
+
+.video iframe {
+	position: absolute;
+	width: 100%;
+	height: 92%;
 }
 
 /*PULL QUOTE*/
@@ -599,6 +624,18 @@ i, em {
 }
 
 .feature-article .image-right {
+	float: right;
+	width: 50%;
+	margin: 0 0 30px 30px;
+}
+
+.feature-article .video-left {
+	float: left;
+	width: 50%;
+	margin: 0 30px 30px 0;
+}
+
+.feature-article .video-right {
 	float: right;
 	width: 50%;
 	margin: 0 0 30px 30px;
@@ -1008,7 +1045,7 @@ i, em {
 	color: #e13c36;
 }
 
-.games .index-article-header-master-container, .article-header-master-container, .games h2.shine-assign-header, .games h2.comments-header, .games .image, .games .discuss-image, .games .archive-current, .games .section-info, .games .promo-reel-item, .games .label-text, .games.article-alert, .games .latest  {
+.games .index-article-header-master-container, .article-header-master-container, .games h2.comments-header, .games .image, .games .video, .games .archive-current, .games .section-info, .games .promo-reel-item, .games .label-text, .games.article-alert, .games .latest  {
 	background-color: #e13c36;
 }
 
@@ -1017,7 +1054,7 @@ i, em {
 	color: #15948b;
 }
 
-.films .article-header-master-container, .films h2.shine-assign-header, .films h2.comments-header, .films .image, .films .image-left, .films .image-right, .films .discuss-image, .films .archive-current, .films .section-info, .films .promo-reel-item, .films .label-text, .films.article-alert, .films .latest  {
+.films .article-header-master-container, .films h2.comments-header, .films .image, .films .video, .films .archive-current, .films .section-info, .films .promo-reel-item, .films .label-text, .films.article-alert, .films .latest  {
 	background-color: #15948b;
 }
 
@@ -1199,6 +1236,11 @@ i, em {
 	
 	.post-two {
 		border-top: 20px solid #fff;;
+	}
+	
+	.closing-paragraph {
+		margin-left: 20px;
+		margin-right: 20px;
 	}
 	
 	#footer p {
