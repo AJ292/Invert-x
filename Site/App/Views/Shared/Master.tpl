@@ -37,7 +37,7 @@
                 <a href="http://logic-and-trick.com/"><img src="{resolve path='Content/Images/logo-lnt.png'}" alt="Logic & Trick"></a>
             </p>
             <p>
-                {actlink text='Admin Login' action=Index controller=Admin}
+                {actlink text='Admin Login' action=Login controller=Account}
             </p>
             {$phoenix_debug}
         </div>

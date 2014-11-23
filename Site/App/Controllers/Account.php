@@ -55,6 +55,7 @@ class AccountController extends Controller
         );
     }
 
+    /*
     public function Register()
     {
         if (Authentication::IsLoggedIn())
@@ -99,7 +100,7 @@ class AccountController extends Controller
     public function VerifySuccess()
     {
         return $this->View();
-    }
+    }*/
 }
 
 ?>

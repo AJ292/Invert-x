@@ -2,16 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cde4ec04-c0ef-4d3b-b383-fd923bfbc636" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Site/App/Views/Home/Article.tpl" afterPath="$PROJECT_DIR$/Site/App/Views/Home/Article.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Site/App/Controllers/Home.php" afterPath="$PROJECT_DIR$/Site/App/Controllers/Home.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Site/App/Views/Home/Index.tpl" afterPath="$PROJECT_DIR$/Site/App/Views/Home/Index.tpl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Site/App/Controllers/Account.php" afterPath="$PROJECT_DIR$/Site/App/Controllers/Account.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Site/App/Views/Account/Login.tpl" afterPath="$PROJECT_DIR$/Site/App/Views/Account/Login.tpl" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Site/App/Views/Shared/Master.tpl" afterPath="$PROJECT_DIR$/Site/App/Views/Shared/Master.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Site/App/Views/Shared/Nav.tpl" afterPath="$PROJECT_DIR$/Site/App/Views/Shared/Nav.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Site/App/Views/Home/News.tpl" afterPath="$PROJECT_DIR$/Site/App/Views/Home/News.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Site/App/Views/Home/Tag.tpl" afterPath="$PROJECT_DIR$/Site/App/Views/Home/Tag.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Site/App/Views/Home/_Article.tpl" afterPath="$PROJECT_DIR$/Site/App/Views/Home/_Article.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Content/Styles/style-combined.css" afterPath="$PROJECT_DIR$/Content/Styles/style-combined.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Site/Content/Styles/style-combined.css" afterPath="$PROJECT_DIR$/Site/Content/Styles/style-combined.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Site/index.php" afterPath="$PROJECT_DIR$/Site/index.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Invert-x.iws" />
@@ -34,92 +28,35 @@
     <favorites_list name="Invert-x" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
-      <split-first>
-        <leaf>
-          <file leaf-file-name="Nav.tpl" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/Site/App/Views/Shared/Nav.tpl">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="14" column="41" selection-start="899" selection-end="899" vertical-scroll-proportion="-9.153846" vertical-offset="0" max-vertical-offset="476">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Index.tpl" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/Site/App/Views/Home/Index.tpl">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="36" column="30" selection-start="1815" selection-end="1815" vertical-scroll-proportion="-23.538462" vertical-offset="0" max-vertical-offset="1190">
-                  <folding>
-                    <element signature="n#style#0;n#div#0;n#a#0;n#div#1;n#div#1;n#!!top" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="News.tpl" pinned="false" current="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/Site/App/Views/Home/News.tpl">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="13" column="14" selection-start="567" selection-end="567" vertical-scroll-proportion="0.36772045" vertical-offset="0" max-vertical-offset="697">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="_Article.tpl" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/Site/App/Views/Home/_Article.tpl">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="2" column="7" selection-start="64" selection-end="64" vertical-scroll-proportion="-1.3076923" vertical-offset="0" max-vertical-offset="340">
-                  <folding>
-                    <marker date="1416722454976" expanded="true" signature="358:421" placeholder="..." />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Article.tpl" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/Site/App/Views/Home/Article.tpl">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="31" column="57" selection-start="1305" selection-end="1305" vertical-scroll-proportion="-20.26923" vertical-offset="0" max-vertical-offset="1156">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Admin.php" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/Site/App/Controllers/Admin.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="6528">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Master.tpl" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/Site/App/Views/Shared/Master.tpl">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="15" column="122" selection-start="1074" selection-end="1121" vertical-scroll-proportion="-0.7307692" vertical-offset="236" max-vertical-offset="850">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file leaf-file-name="game-news-article.html" pinned="false" current="true" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/game-news-article.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="39" column="50" selection-start="1845" selection-end="1845" vertical-scroll-proportion="0.33943427" vertical-offset="459" max-vertical-offset="1173">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf>
+      <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Site/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="66" column="0" selection-start="2299" selection-end="2299" vertical-scroll-proportion="-23.23077" vertical-offset="518" max-vertical-offset="1377">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Admin.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Site/App/Controllers/Admin.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="3" column="30" selection-start="81" selection-end="81" vertical-scroll-proportion="-1.9615384" vertical-offset="0" max-vertical-offset="6528">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Master.tpl" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Site/App/Views/Shared/Master.tpl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="39" column="56" selection-start="2535" selection-end="2535" vertical-scroll-proportion="0.8615635" vertical-offset="134" max-vertical-offset="850">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -142,10 +79,17 @@
         <option value="$PROJECT_DIR$/Site/App/Views/Home/Article.tpl" />
         <option value="$PROJECT_DIR$/Site/App/Controllers/Home.php" />
         <option value="$PROJECT_DIR$/Site/App/Views/Home/Tag.tpl" />
-        <option value="$PROJECT_DIR$/Site/App/Views/Shared/Master.tpl" />
         <option value="$PROJECT_DIR$/Site/App/Views/Home/Index.tpl" />
         <option value="$PROJECT_DIR$/Site/App/Views/Home/News.tpl" />
         <option value="$PROJECT_DIR$/Content/Styles/style-combined.css" />
+        <option value="$PROJECT_DIR$/Site/index.php" />
+        <option value="$PROJECT_DIR$/Site/Phoenix/Framework/RouteParameters.php" />
+        <option value="$PROJECT_DIR$/Site/Phoenix/Phoenix.php" />
+        <option value="$PROJECT_DIR$/Site/Phoenix/Framework/Authorisation.php" />
+        <option value="$PROJECT_DIR$/Site/App/Controllers/Admin.php" />
+        <option value="$PROJECT_DIR$/Site/App/Views/Shared/Master.tpl" />
+        <option value="$PROJECT_DIR$/Site/App/Controllers/Account.php" />
+        <option value="$PROJECT_DIR$/Site/App/Views/Account/Login.tpl" />
       </list>
     </option>
   </component>
@@ -211,68 +155,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Site" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Invert-x" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Invert-x" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Site" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Content" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Styles" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Invert-x" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Invert-x" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Site" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Content" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Invert-x" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Invert-x" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Site" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Content" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Avatars" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -367,6 +249,32 @@
               <option name="myItemId" value="App" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Account" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Invert-x" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Invert-x" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Site" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="App" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -390,53 +298,37 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Invert-x" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Invert-x" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Content" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Styles" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Invert-x" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Invert-x" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Content" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder0" value="0" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="292" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="292" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="296" />
     <property name="options.lastSelected" value="web.server" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Content" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Site/index.php" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="293" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="971" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="967" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="292" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="285" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder3" value="3" />
     <property name="FullScreen" value="false" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
-  <component name="PublishConfig" serverName="XAMPP" serverId="e570c53a-5373-4fdf-b72a-54323a76f398" traceLevel="DETAILS" autoUpload="true" autoUploadExternalChanges="true">
+  <component name="PublishConfig" serverName="XAMPP" serverId="e570c53a-5373-4fdf-b72a-54323a76f398" createEmptyFolders="true" traceLevel="DETAILS" autoUpload="true" autoUploadExternalChanges="true">
     <servers>
       <server id="17f94055-ba9c-4b6e-bc9c-3f9cc67bb665">
         <serverdata>
@@ -490,8 +382,22 @@
       <server id="bc96727b-b229-484e-86ce-cbccc549cc78">
         <serverdata>
           <mappings>
-            <mapping local="$PROJECT_DIR$" />
+            <mapping deploy="/beta" local="$PROJECT_DIR$/Site" />
           </mappings>
+          <excludedPaths>
+            <ExcludedPath>
+              <option name="local" value="true" />
+              <option name="path" value="D:\Github\Invert-x\Content" />
+            </ExcludedPath>
+            <ExcludedPath>
+              <option name="local" value="true" />
+              <option name="path" value="D:\Github\Invert-x\Site\.htaccess" />
+            </ExcludedPath>
+            <ExcludedPath>
+              <option name="local" value="true" />
+              <option name="path" value="D:\Github\Invert-x\Site\index.php" />
+            </ExcludedPath>
+          </excludedPaths>
         </serverdata>
       </server>
       <server id="c9e6802c-5c37-42fc-ace8-66b73a05a010">
@@ -577,7 +483,7 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1679473" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -599,115 +505,118 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Site/Content/Avatars/LogicAndTrick.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Content/Avatars/AJ.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Content/Avatars/LogicAndTrick.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tagged.html">
+    <entry file="file://$PROJECT_DIR$/game-news-article.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.5091514" vertical-offset="306" max-vertical-offset="1207">
+        <state line="39" column="50" selection-start="1845" selection-end="1845" vertical-scroll-proportion="0.4848485" vertical-offset="327" max-vertical-offset="1173">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Site/App/Views/Home/_Article.tpl">
+    <entry file="file://$PROJECT_DIR$/Site/Phoenix/Framework/RouteParameters.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="7" selection-start="64" selection-end="64" vertical-scroll-proportion="-1.3076923" vertical-offset="0" max-vertical-offset="340">
-          <folding>
-            <marker date="1416722454976" expanded="true" signature="358:421" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Site/App/Views/Home/Article.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="57" selection-start="1305" selection-end="1305" vertical-scroll-proportion="-20.26923" vertical-offset="0" max-vertical-offset="1156">
+        <state line="50" column="5" selection-start="852" selection-end="852" vertical-scroll-proportion="-8.576923" vertical-offset="627" max-vertical-offset="1292">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Site/App/Views/Home/Tag.tpl">
+    <entry file="file://$PROJECT_DIR$/Site/Phoenix/Framework/Authorisation.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="36" selection-start="126" selection-end="126" vertical-scroll-proportion="0.08306189" vertical-offset="0" max-vertical-offset="614">
-          <folding>
-            <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
+        <state line="43" column="0" selection-start="1244" selection-end="1244" vertical-scroll-proportion="0.6921824" vertical-offset="306" max-vertical-offset="5984">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Site/App/Controllers/Home.php">
+    <entry file="file://$PROJECT_DIR$/Site/Phoenix/Framework/Router.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="145" column="37" selection-start="6357" selection-end="6357" vertical-scroll-proportion="0.7737105" vertical-offset="2000" max-vertical-offset="3417">
+        <state line="516" column="21" selection-start="18970" selection-end="18970" vertical-scroll-proportion="0.5846906" vertical-offset="8413" max-vertical-offset="9027">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Site/Phoenix/Framework/Hooks.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="90" column="30" selection-start="2206" selection-end="2206" vertical-scroll-proportion="0.58143324" vertical-offset="1173" max-vertical-offset="1921">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Site/Phoenix/Phoenix.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="141" column="68" selection-start="3553" selection-end="3553" vertical-scroll-proportion="0.5358306" vertical-offset="2068" max-vertical-offset="2907">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Site/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="66" column="0" selection-start="2299" selection-end="2299" vertical-scroll-proportion="-23.23077" vertical-offset="518" max-vertical-offset="1377">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Site/App/Views/Shared/Footer.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="640">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Site/App/Controllers/Admin.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="6528">
+        <state line="3" column="30" selection-start="81" selection-end="81" vertical-scroll-proportion="-1.9615384" vertical-offset="0" max-vertical-offset="6528">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Site/App/Views/Account/Register.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1122">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Site/App/Views/Home/About.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="275" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="391">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Site/App/Controllers/Account.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="9" selection-start="675" selection-end="675" vertical-scroll-proportion="0.22149837" vertical-offset="255" max-vertical-offset="1904">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Site/App/Controllers/Home.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3417">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin-login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="40" selection-start="1731" selection-end="1763" vertical-scroll-proportion="0.36772045" vertical-offset="408" max-vertical-offset="1105">
+          <folding>
+            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Site/App/Views/Account/Login.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="14" selection-start="273" selection-end="273" vertical-scroll-proportion="0.16612378" vertical-offset="0" max-vertical-offset="614">
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Site/App/Views/Shared/Master.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="122" selection-start="1074" selection-end="1121" vertical-scroll-proportion="-0.7307692" vertical-offset="236" max-vertical-offset="850">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Site/App/Views/Shared/Nav.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="41" selection-start="899" selection-end="899" vertical-scroll-proportion="-9.153846" vertical-offset="0" max-vertical-offset="476">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Site/App/Views/Home/Index.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="30" selection-start="1815" selection-end="1815" vertical-scroll-proportion="-23.538462" vertical-offset="0" max-vertical-offset="1190">
-          <folding>
-            <element signature="n#style#0;n#div#0;n#a#0;n#div#1;n#div#1;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Content/Styles/style-combined.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="368" column="19" selection-start="5952" selection-end="5952" vertical-scroll-proportion="0.4719472" vertical-offset="5970" max-vertical-offset="21811">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Site/Content/Styles/style-combined.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="21811">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Site/App/Views/Home/News.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="14" selection-start="567" selection-end="567" vertical-scroll-proportion="0.36772045" vertical-offset="0" max-vertical-offset="697">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/game-news-article.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="50" selection-start="1845" selection-end="1845" vertical-scroll-proportion="0.33943427" vertical-offset="459" max-vertical-offset="1173">
+        <state line="39" column="56" selection-start="2535" selection-end="2535" vertical-scroll-proportion="0.8615635" vertical-offset="134" max-vertical-offset="850">
           <folding />
         </state>
       </provider>

@@ -61,10 +61,10 @@ Authentication::$post_register = 'register';
 // TODO: Deployment - change salt values
 // I have since found out that hard-coded salt like this is known as "pepper", and real salts are stored in the database
 Authentication::RegisterPasswordHasher(new AlgorithmHasher('sha256', 'SALT_PREPEND', 'SALT_APPEND'));
-//Authentication::Enable();
+Authentication::Enable();
 
 // TODO: Deployment - set authorisation method
-//Authorisation::SetAuthorisationMethod(new LoggedInAuthorisation());
+Authorisation::SetAuthorisationMethod(new LoggedInAuthorisation());
 
 Router::MapRoute("{controller}/{action}/{*}");
 Router::MapRegexRoute("%^([^/]{1,})/?$%", array('controller' => 'Home', 'action' => 'Article', 'params' => 1));
