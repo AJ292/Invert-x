@@ -35,11 +35,14 @@
     </div>
 
     <div class="right-column">
+        <div class="search">
+            <p><img src="{resolve path='Content/Images/icon-search.svg'}" alt="Search"></p> <input type="text">
+        </div>
         <ul class="site-tools">
-            <li><a href="#"><img src="{resolve path='Content/Images/social-rss.svg'}" alt="RSS"></a></li>
-            <li><a href="#"><img src="{resolve path='Content/Images/social-facebook.svg'}" alt="FB"></a></li>
-            <li><a href="#"><img src="{resolve path='Content/Images/social-reddit.svg'}" alt="Reddit"></a></li>
-            <li><a href="#"><img src="{resolve path='Content/Images/social-twitter.svg'}" alt="Twitter"></a></li>
+            <li><a href="http://feeds.feedburner.com/Invert-x?format=xml"><img src="{resolve path='Content/Images/social-rss.svg'}" alt="RSS"></a></li>
+            <li><a href="http://facebook.com/invertx"><img src="{resolve path='Content/Images/social-facebook.svg'}" alt="FB"></a></li>
+            <!--li><a href="#"><img src="{resolve path='Content/Images/social-reddit.svg'}" alt="Reddit"></a></li>
+            <li><a href="#"><img src="{resolve path='Content/Images/social-twitter.svg'}" alt="Twitter"></a></li-->
         </ul>
         <h2>What is this place?</h2>
         <p>Built from scratch and captained by two Australian nerds, <a href="http://scrub-studios.com/">AJ</a> and <a href="http://logic-and-trick.com">Logic &amp; Trick</a>, Invert-x is a game and film blog containing a variety of dual-author columns, short-form articles and musings about all things gaming and all things cinema.</p>

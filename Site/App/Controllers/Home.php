@@ -29,6 +29,7 @@ class HomeController extends Controller
             LIMIT 15"
         );
         $this->viewData['body_class'] = 'home';
+        Templating::SetPageTitle('');
         return $this->View();
     }
 
@@ -85,6 +86,7 @@ class HomeController extends Controller
                 ->Where('NewsID', '=', $id)
                 ->All();
         $this->viewData['body_class'] = $news->Class . ' ' . 'news';
+        Templating::SetPageTitle($news->Heading);
         return $this->View($news);
     }
 
@@ -110,6 +112,7 @@ class HomeController extends Controller
             array_slice($rem, $len * 2)
         );
         $this->viewData['body_class'] = $cat->Class . ' archive';
+        Templating::SetPageTitle($cat->Name);
         return $this->View($cat);
     }
 
@@ -140,6 +143,7 @@ class HomeController extends Controller
                 array('tag' => $tag));
         $this->viewData['tag'] = $tag;
         $this->viewData['body_class'] = 'games tagged';
+        Templating::SetPageTitle($tag);
         return $this->View($tags);
     }
 

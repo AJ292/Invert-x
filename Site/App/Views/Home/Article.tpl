@@ -23,13 +23,13 @@
 
     {if $model->Type == 'Dual'}
         <div class="post-one">
-            {partial view=_Article model=$articles[0]}
+            {partial view=_Article model=$articles[0] side='left'}
         </div>
         <div class="post-two">
-            {partial view=_Article model=$articles[1]}
+            {partial view=_Article model=$articles[1] side='right'}
         </div>
     {else}
-        {partial view=_Article model=$articles[0]}
+        {partial view=_Article model=$articles[0] side=''}
     {/if}
 </div>
 

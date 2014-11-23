@@ -5,7 +5,7 @@
 		<meta name="description" content="">
 		<meta name="keywords" content="">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>{$page_title} &ndash; Invert-x &ndash; The non-competitive, duel to the death.</title>
+		<title>{if $page_title}{$page_title} &ndash; {/if}Invert-x &ndash; The non-competitive, duel to the death.</title>
 		<link href='http://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="{resolve path='Content/Styles/normalize.css'}">
@@ -13,6 +13,7 @@
         <link rel="stylesheet" href="{resolve path='Content/Styles/bbcode.css'}">
         <link rel="stylesheet" href="{resolve path='Content/Styles/phoenix.css'}">
 		<link rel="shortcut icon" href="{resolve path='Content/Images/favicon.png'}">
+        <link rel="alternate" type="application/rss+xml" title="RSS" href="http://feeds.feedburner.com/Invert-x?format=xml">
         <script type="text/javascript" src="{resolve path='Content/Scripts/jquery-1.8.2.min.js'}"></script>
         <script type="text/javascript" src="{resolve path='Content/Scripts/jquery.scrollTo-1.4.3.1.min.js'}"></script>
         <script type="text/javascript" src="{resolve path='Content/Scripts/jquery.easing.1.3.js'}"></script>
