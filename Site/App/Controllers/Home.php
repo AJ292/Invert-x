@@ -113,16 +113,79 @@ class HomeController extends Controller
         return $this->View($cat);
     }
 
-    function Tag($tag)
+    function Tag($tag, $page = 1)
     {
-        $cat = new Category($id);
-        $this->viewData['body_class'] = 'game-article';
-        return $this->View($cat);
+        if (!is_numeric($page)) $page = 1;
+        $offset = ($page-1)*10;
+        $tags = CustomQuery::Query(
+                "SELECT *
+                FROM (
+                    SELECT DISTINCT 'News' AS Type, N.ID, N.Heading, '' AS Url, N.HtmlSummary, N.Image, N.Created, U.ID AS UserID, U.Name AS UserName, C.Class, S.Name AS SectionName
+                    FROM NewsTags NT
+                    LEFT JOIN News N ON NT.NewsID = N.ID
+                    LEFT JOIN Users U ON N.UserID = U.ID
+                    LEFT JOIN Categories C ON N.CategoryID = C.ID
+                    LEFT JOIN NewsSections S ON N.SectionID = S.ID
+                    WHERE NT.Tag = :tag
+                    UNION
+                    SELECT DISTINCT 'Topic' AS Type, T.ID, T.Title, T.Url, T.TagLine, T.ArchivesImage, T.Date, 0, '', C.Class, ''
+                    FROM TopicTags TT
+                    LEFT JOIN Topics T ON TT.TopicID = T.ID
+                    LEFT JOIN Categories C ON T.CategoryID = C.ID
+                    WHERE T.Published > 0
+                    AND TT.Tag = :tag
+                ) A
+                ORDER BY Created DESC, ID DESC
+                LIMIT $offset,10",
+                array('tag' => $tag));
+        $this->viewData['tag'] = $tag;
+        $this->viewData['body_class'] = 'games tagged';
+        return $this->View($tags);
     }
 
     function About()
     {
         $this->viewData['body_class'] = 'games basic-page';
         return $this->View();
+    }
+
+    function Rss()
+    {
+        header('Content-Type: text/xml; charset=UTF-8');
+        $feed = CustomQuery::Query(
+                "SELECT *
+                FROM (
+                    SELECT 'News' AS Type, N.ID, N.Heading, N.HtmlSummary, N.HtmlContent, CONCAT('Home/News/', N.ID) AS Url, N.Image, N.Created, U.ID AS UserID, U.Name AS UserName
+                    FROM News N
+                    LEFT JOIN Users U ON N.UserID = U.ID
+                    LEFT JOIN Categories C ON N.CategoryID = C.ID
+                    LEFT JOIN NewsSections S ON N.SectionID = S.ID
+                    UNION
+                    SELECT 'Topic' AS Type, T.ID, T.Title, '', '', T.Url, T.ArchivesImage, T.Date, 0, ''
+                    FROM Topics T
+                    LEFT JOIN Categories C ON T.CategoryID = C.ID
+                    WHERE T.Published > 0
+                ) A
+                ORDER BY Created DESC, ID DESC
+                LIMIT 50"
+            );
+        $ids = [];
+        foreach ($feed as $f) if ($f->Type == 'Topic') $ids[] = $f->ID;
+        $ids = implode(',', $ids);
+        $articles = [];
+        $aq = CustomQuery::Query(
+            "SELECT A.TopicID, A.TagLine, A.HtmlContent, U.ID AS UserID, U.Name AS UserName
+            FROM Articles A
+            LEFT JOIN Users U ON A.UserID = U.ID
+            WHERE A.TopicID IN ($ids)
+            ORDER BY A.OrderIndex");
+        foreach ($aq as $a) {
+            $tid = $a->TopicID;
+            if (!array_key_exists($tid, $articles)) $articles[$tid] = array();
+            $articles[$tid][] = $a;
+        }
+        $this->viewData['date'] = $feed[0]->Created;
+        $this->viewData['articles'] = $articles;
+        return $this->Render($feed);
     }
 }

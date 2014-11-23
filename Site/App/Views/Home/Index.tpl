@@ -21,9 +21,11 @@
                         <span class="label-text">{$activity->SectionName}</span>
                     </div>
                     <a class="news-article-image" href="{action action=News controller=Home id=$activity->ID}" style="background-image: url('{resolve path="Content/News/{$activity->Image}"}')"></a>
-                    <h2>{actlink text=$activity->Heading action=News controller=Home id=$activity->ID}</h2>
-                    <p><i>Published {Date::Format('j F, Y', $activity->Created)} by <strong>{$activity->UserName}</strong></i></p>
-                    <div>{$activity->HtmlSummary}</div>
+                    <div class="news-article-content">
+                        <h2>{actlink text=$activity->Heading action=News controller=Home id=$activity->ID}</h2>
+                        <p><i>Published {Date::Format('j F, Y', $activity->Created)} by <strong>{$activity->UserName}</strong></i></p>
+                        <div>{$activity->HtmlSummary}</div>
+                    </div>
                 </div>
             {elseif $activity->Type == 'Topic'}
                 <a class="{$activity->Class} article-alert" href="{resolve path=$activity->HtmlSummary}"><img src="{resolve path='Content/Images/icon-archive.svg'}"> New article: {$activity->Heading}</a>
